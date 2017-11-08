@@ -21,7 +21,7 @@ Die Pumpwirkung kommt dadurch zustande, dass beim Drehen des Rotors das Volumen 
 
 Eine Turbomolekularpumpe besteht aus einer Statoreinheit und einer Rotoreinheit. Die Rotoreinheit besteht aus einzelnen Schaufeln, die unter einem Winkel $\alpha$ gegen die Diffusionsrichtung gestellt sind.
 Die Schaufeln rotieren mit einer Geschwindigkeit $u$, die (am äußeren Rand) ungefähr der mittleren thermischen Geschwindigkeit der Gasmoleküle entspricht. Durch die wiederholte Kollision der Gasmoleküle mit den Rotorschaufeln erhalten diese einen Impuls in Pumprichtung.
-Oft sind turbomolekularpumpen auch aus mehreren hintereinander geschalteten Pumpstufen aufgebaut.
+Oft sind Turbomolekularpumpen auch aus mehreren hintereinander geschalteten Pumpstufen aufgebaut.
 
 \section{Quadrupol-Massenspektrometer}
 
@@ -63,7 +63,7 @@ Zur Untersuchung der Moleküle ist es notwendig, diese zu ionisieren. Dies kann 
 \section{Versuch 1: Einführung}
 
 In diesem Versuch wird zunächst ein Restgasspektrum unter Standardbedingungen ($E=\SI{65}{\electronvolt}, \, I^{-}=\SI{1}{\milli\ampere}$) aufgenommen. Der Versuchsaufbau ist in Abb. \ref{fig0v11} dargestellt.
-Es werden Linien bei $m=28,\, 32$ und $44$ erwartet. Diese gehören vermutlich zu $\rm{N}_{2}, \, \rm{O}_{2}$ und $\rm{CO}_{2}$.
+Es werden Linien bei $m=28,\, 32$ und $44$ erwartet. Diese gehören vermutlich zu $\textrm{N}_{2}, \, \textrm{O}_{2}$ und $\textrm{CO}_{2}$.
 
 Für eine Linie wird die Abhängigkeit des Ionenstroms $I^{+}$ vom Elektronenstrom $I^{-}$ gemessen. Es wird erwartet, dass der Ionenstrom mit steigendem Elektronenstrom ansteigt.
 
@@ -86,21 +86,39 @@ In diesem Versuch wird die \%-Linienbreite Definition verwendet werden, da diese
 
 \section{Versuch 2: Auftrittsenergie von Argon}
 
-In diesem Versuch werden die Auftrittsenergien von $\rm{Ar}^{+}$ und $\rm{Ar}^{2+}$ gemessen. Bei der Auftrittsenergie handelt es sich um die Energie der stoßenden Elektronen, ab der die Ionisierung stattfindet.
-Dazu wird Argon mit dem Dosierventil bei angeschlossener Turbomolekularpumpe bis zu einem Maximaldruck von $\SI{5e-6}{\milli\bar}$ in den Rezipienten geleitet. Es werden Linien bei $m=40$ ($\rm{Ar}^{+}$) und $m=20$ ($\rm{Ar}^{2+}$) erwartet.
+In diesem Versuch werden die Auftrittsenergien von Ar$^{+}$ und Ar$^{2+}$ gemessen. Bei der Auftrittsenergie handelt es sich um die Energie der stoßenden Elektronen, ab der die Ionisierung stattfindet.
+Dazu wird Argon mit dem Dosierventil bei angeschlossener Turbomolekularpumpe bis zu einem Maximaldruck von $\SI{5e-6}{\milli\bar}$ in den Rezipienten geleitet. Es werden Linien bei $m=40$ (Ar$^{+}$) und $m=20$ (Ar$^{2+}$) erwartet. Dies liegt daran, dass nicht direkt die Massen, sondern das Verhältnis $\frac{q}{m}$ gemessen wird, was bei Ar$^{2+}$ Ionen zu einer scheinbar halb so großen Masse führt.
 
 \section{Versuch 3: Dissoziationsenergien von Stickstoff}
 
 In diesem Versuch werden die Dissoziationsenergien für das neutrale Stickstoffmolekül und für das Stickstoffmolekülion bestimmt. Unter Elektronenbeschuss sind die folgenden Reaktionswege möglich
 \begin{align}
- \rm{N}_{2} \, + \, \rm{e}^{-} \, &\to \, \rm{N}_{2}^{+} \, + \, 2\rm{e}^{-}, \\
- \rm{N}_{2} \, + \, \rm{e}^{-} \, &\to \, \rm{N}^{+} \, + \, \rm{N} \, + \, 2\rm{e}^{-}, \\
- \rm{N}_{2}^{+} \, + \, \rm{e}^{-} &\, \to \, 2\rm{N}^{+} \, + \, 2\rm{e}^{-}.
+ \textrm{N}_{2} \, + \, \textrm{e}^{-} \, &\to \, \textrm{N}_{2}^{+} \, + \, 2\textrm{e}^{-}, \\
+ \textrm{N}_{2} \, + \, \textrm{e}^{-} \, &\to \, \textrm{N}^{+} \, + \, \textrm{N} \, + \, 2\textrm{e}^{-}, \\
+ \textrm{N}_{2}^{+} \, + \, \textrm{e}^{-} &\, \to \, 2\textrm{N}^{+} \, + \, 2\textrm{e}^{-}.
 \end{align}
 Durch Messung der Auftrittsenergien für $m=14$ und $m=28$ können nun die Dissoziationsenergien bestimmt werden.
 
 
 
 
+\section{Versuch 4: Quantitative Analyse}
 
+Da sich Moleküle unterschiedliche Ionisierungsenergien habe und sich somit die verschiedenen Ionenströme nicht gegenseitig beeinflussen, lässt sich eine 
+quantitative Analyse eines Gasgemischs durchführen. Die Massenspektren überlagern
+sich additiv, wodurch von der Höhe des Ionenstroms auf den relativen Anteil der einzelnen Moleküle geschlossen werden kann.\\
+Als erstes wird für eventuell nötige Korrekturen ein Untergrundspektrum für m = 14 u und m = 28 u aufgenommen.
+Danach wird Raumluft bis $5\cdot10^{-6} \si{\bar}$ in die Kammer eingelassen und erneut ein Massenspektrum aufgenommen, woraus die Partialdrücke der einzelnen Moleküle bestimmt werden können.\\
+Summiert man die Partialdrücke auf wird der Gesamtdruck vermutlich niedriger als der gemessene Druck in der Ionisationskammer sein, da nur ein Bruchteil der Moleküle tatsächlich ionisiert wird und am Detektor erfasst werden kann.
 
+\section{Versuch 5: Qualitative Analyse}
+
+Für die qualitative Analyse wird ein unbekanntes Kohlenwasserstoffmolekül in die Ionisationskammer eingelassen und bei E = {15, 30, 65}\;eV jeweils ein Massenspektrum aufgenommen.
+Das große Molekül dissoziiert dabei in kleinere ionisierte Bruchstücke, die bestimmt werden sollen.\\
+Es wird erwartet, dass die Anzahl der Bruchstücke mit steigender Energie zunimmt, da bei höheren kinetischen Energien der stoßenden Elektronen mehr Energie auf die Molekülbindungen übertragen wird. 
+Übersteigt diese Energie die benötigte Dissoziationsenergie dieser Bindung zerbricht das Molekül in kleinere ionisierte Bruchstücke.
+
+\section{Versuch 6: Restgasanalyse}
+
+In diesem Versuch wird erneut eine Massenspektrum aufgenommen und daraus quantitativ die Bestandteile des Restgases in der Ionisationskammer bestimmt.
+Nachdem die Kammer auf 77\;K herunter gekühlt wurde, wird erwartet, dass die Summe der Partialdrücke geringer als bei Raumtemperatur ist, da zB Wasserdampf bei solch niedrigen Temperaturen fest wird und somit nicht mehr als einzelne Ionen am Detektor gemessen werden kann.

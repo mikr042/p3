@@ -117,30 +117,30 @@
     %\pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
                                         %        added]{name of the chapter}
             
-    \setcounter{chapter}{-1}
-    \emptychapter[1]{Aufgabenstellung}{}
-    \includepdf[pages=1, 
-    pagecommand={\thispagestyle{fancy}}, 
-    offset=2.5cm -2.5cm]{./fig/fig_aufgabenblatt}
-
-    \includepdf[pages=2, 
-    pagecommand={\thispagestyle{fancy}}, offset=-2.5cm 
-    -0.5cm, trim=0cm 4cm 0cm 0cm, clip ]{./fig/fig_aufgabenblatt}
-
-	 \includepdf[pages=3, 
-    pagecommand={\thispagestyle{fancy}}, offset=2.5cm 
-    -0.5cm, trim=0cm 4cm 0cm 0cm, clip ]{./fig/fig_aufgabenblatt}
+%    \setcounter{chapter}{-1}
+%    \emptychapter[1]{Aufgabenstellung}{}
+%    \includepdf[pages=1, 
+%    pagecommand={\thispagestyle{fancy}}, 
+%    offset=2.5cm -2.5cm]{./fig/fig_aufgabenblatt}
+%
+%    \includepdf[pages=2, 
+%    pagecommand={\thispagestyle{fancy}}, offset=-2.5cm 
+%    -0.5cm, trim=0cm 4cm 0cm 0cm, clip ]{./fig/fig_aufgabenblatt}
+%
+%	 \includepdf[pages=3, 
+%    pagecommand={\thispagestyle{fancy}}, offset=2.5cm 
+%    -0.5cm, trim=0cm 4cm 0cm 0cm, clip ]{./fig/fig_aufgabenblatt}
 
     
     \chapter{Auswertung}
-    \input{./chap/auswertung.tex} %\cleardoublepage
+    \input{./chap/massenspek_vorb.tex} %\cleardoublepage
 
     % appendix for more or less interesting calculations
     \Appendix
-    \chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
+    %\chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
     % to make the appendix appear in ToC without number. \appendixname = 
     % Appendix or Anhang (depending on chosen language)
-    \input{./chap/appendix.tex} %\cleardoublepage
+    %\input{./chap/appendix.tex} %\cleardoublepage
 
 	\begingroup
 	\let\clearpage\relax
