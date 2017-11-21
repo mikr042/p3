@@ -31,6 +31,7 @@ Die Werte für m = 28\;u wurden Abb. \ref{fig:aufloesung} entnommen, der Rest de
 \end{tabular}
 
 \section{Auftrittsenergie von Argon}
+\label{sec:argon}
 
 Um die Auftrittsenergie von Argon zu bestimmen, wurde die Vakuumkammer bis zu einem Druck von $4\cdot 10^{-6}$\;mbar mit Argon befüllt.
 Anschließend wurde das Massenspektrometer auf m = 40\;u und m = 20\;u zur Detektierung von respektive Ar$^{+}$ und Ar$^{++}$-Ionen eingestellt.\\
@@ -42,7 +43,7 @@ Auf diese Weise wurde der Partialdruck der Argonionen in Abhängigkeit der Elekt
 	\subfigure[]{\includegraphics[width=0.49\textwidth]{fig/argon+}}
 	\subfigure[]{\includegraphics[width=0.49\textwidth]{fig/argon++}}
 	\caption{\textbf{a)} Partialdruck in Abhängigkeit der Elektronenenergie bei m = 40\;u (Ar$^+$), \textbf{b)} Partialdruck in Abhängigkeit der Elektronenenergie bei m = 20\;u (Ar$^{++}$)}
-	\label{fig:2_1_plot}
+	\label{fig:plot_argon}
 \end{figure}
 
 Wie erwartet nimmt der Partialdruck erst linear zu wodurch man mit einer Regression in diesem Bereich die Auftrittsenergie bestimmen kann.
@@ -70,9 +71,35 @@ In beiden Fällen liegt der Literaturwert außerhalb der Fehlergrenzen und die W
 	\Delta E_a = \sqrt(\left(\frac{\partial E_a}{\partial c}\cdot\Delta c\right)^2 + \left(\frac{\partial E_a}{\partial m}\cdot\Delta m\right)^2)
 	\label{eq:gauss}
 \end{equation}
+
 \section{Dissoziationsenergie von Stickstoff}
 
-
+Wie in der Vorbereitung beschrieben (\ref{sec:v3}) müssen als Erstes die Auftrittsenergien von N$^+$ und N$_2^+$ bestimmt werden. Dabei wird analog zum vorherigen Versuch verfahren (\ref{sec:argon}).\\
+\begin{figure}[h]
+	\centering
+	\subfigure[]{\includegraphics[width=0.49\textwidth]{fig/n+}}
+	\subfigure[]{\includegraphics[width=0.49\textwidth]{fig/n2+}}
+	\caption{\textbf{a)} Partialdruck in Abhängigkeit der Elektronenenergie bei m = 14\;u (N$^+$), \textbf{b)} Partialdruck in Abhängigkeit der Elektronenenergie bei m = 28\;u (N$_2^{++}$)}
+	\label{fig:plot_stickstoff}
+\end{figure}
+Es ergeben sich die folgenden Regressionsgeraden:
+\begin{align}
+\textrm{p}_{N+}(E) &= \left((0,2571\pm 0,0011)\cdot\frac{E}{eV} - (6,7936\pm 0,0383)\right)10^{-9}\textrm{mbar}\\
+\textrm{p}_{N++}(E) &= \left((0,2873\pm 0,0056)\cdot\frac{E}{eV} - (5,0472\pm 0,1152\right)10^{-7}\textrm{mbar}
+\end{align}
+Mittels Gaußscher Fehlerfortpflanzung (Gl. \ref{eq:gauss}) lässt sich die Auftrittsenergie mit Unsicherheit bestimmen:
+\begin{align}
+E_{a,N+} &= (26,42\pm 0,19)\;eV\\
+E_{a,N_2^+} &= (17,57\pm 0,53)\;eV
+\end{align}
+Mit Kenntnis der Ionisationsenergie von Stickstoff (E$_\textrm{I}$ = 14,5\;eV) können nun die Dissoziationsenergien bestimmt werden:
+\begin{align}
+	E_\textrm{D}(N_2) &= E_a(N^+) - E_a(N_2^+) = (11,92\pm 0,56)\;eV\\
+	E_\textrm{D}(N_2^+) &= E_a(N^+) - E_\textrm{I} = (8,85\pm 0,19)\;eV
+\end{align}
+Vergleicht man die gemessenen Werte mit den Literaturwerte (E$_\textrm{D}$(N$_2^+$) = 8,713\;eV, E$_\textrm{D}$(N$_2$) = 9,759\;eV, \cite{kobra}) so
+ergibt sich eine Abweichung von 22,1\% für neutrales, bzw 1,6\% für einfach ionisierten molekularen Stickstoff.\\
+Das Ergebnis für einfach ionisierten Stickstoff ist also sehr gut, obwohl der Messwert für neutralen Stickstoff relativ weit abweicht. Dies kann an einem nicht beachteten systematischen Fehler liegen, der bei beiden Messungen in die gleiche Richtung verfälscht. Dies würde erklären, warum die Differenz zweier Messwerte ein gutes Ergebnis liefert, wenn aber ein Literaturwert abgezogen wird, eine recht große Abweichung nach oben zu sehen ist.\\
 
 \section{Versuch 4: Quantitative Analyse der Raumluft}
 
