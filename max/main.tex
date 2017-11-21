@@ -1,0 +1,165 @@
+\documentclass{include/protokollclass}
+% Main File - Based on protokollclass.cls
+% Comments are mostly in English (and some in German, concerning the Praktikum)
+% ------------------------------------------------------------------------------
+% Further files in folder:
+%  - include/cmds.tex (for macros and additional commands)
+%  - include/kitlogo.pdf (for titlepage)
+%  - lit.bib (bibtex bibliography database)
+%  - include/titlepage.tex (for layout of titelpage)
+% ------------------------------------------------------------------------------
+% Useful Supplied Packages:
+% amsmath, amssymb, mathtools, bbm, upgreek, nicefrac,
+% siunitx, varioref, booktabs, graphicx, tikz, multicol
+
+
+
+
+
+%% ---------------------------------------------
+%% |    Informationen über dieses Protokoll    |
+%% ---------------------------------------------
+\newcommand{\praktikum}{P2}                % P1 oder P2
+\newcommand{\semester}{SS17}            % z.B. "WS14/15" oder "SS15"
+
+\newcommand{\wochentag}{Di}                % Mo, Di, Mi oder Do
+\newcommand{\gruppennr}{02}                % Zweistellige Gruppennummer
+
+\newcommand{\nachnamea}{Selbiger}             % Nachname des ersten Praktikanten
+\newcommand{\vornamea}{Florian}               % Vorname des ersten Praktikanten
+\newcommand{\nachnameb}{Rampp}              % Nachname des zweiten Praktikanten
+\newcommand{\vornameb}{Michael}              % Vorname des zweiten Praktikanten
+
+\newcommand{\emailadressen}{florian.selbiger@gmail.com, michael.rampp@gmx.net}
+% optionale Angabe von Emailadresse(n) für den Kontakt mit dem Betreuer
+
+\newcommand{\versuch}{Materialanalyse mit Röntgenstrahlen} % Name des Versuchs
+\newcommand{\versuchsnr}{xx}               % bitte die korrekte Nummer dem 
+                                           % Arbeitsplatz am Versuchstag 
+                                           % entnehmen
+\newcommand{\fehlerrechnung}{Nein}         % Ob Fehlerrechnung im Versuch 
+                                           % durchgeführt wurde oder nicht
+
+\newcommand{\betreuer}{M. Mustermann}      % Name des zuständigen Betreuers
+\newcommand{\durchgefuehrt}{02.05.17}      % Datum, an dem der Versuch 
+                                           % durchgeführt wurde
+
+
+\usepackage{siunitx}
+
+
+%% --------------------------------------
+%% |    Settings for Word Separation    |
+%% --------------------------------------
+% Help for separation:
+% In German package the following hints are additionally available:
+% "- = Additional separation
+% "| = Suppress ligation and possible separation (e.g. Schaf"|fell)
+% "~ = Hyphenation without separation (e.g. bergauf und "~ab)
+% "= = Hyphenation with separation before and after
+% "" = Separation without a hyphenation (e.g. und/""oder)
+
+% Describe separation hints here:
+\hyphenation
+{
+    über-nom-me-nen an-ge-ge-be-nen
+    %Pro-to-koll-in-stan-zen
+    %Ma-na-ge-ment  Netz-werk-ele-men-ten
+    %Netz-werk Netz-werk-re-ser-vie-rung
+    %Netz-werk-adap-ter Fein-ju-stier-ung
+    %Da-ten-strom-spe-zi-fi-ka-tion Pa-ket-rumpf
+    %Kon-troll-in-stanz
+}
+
+
+
+
+
+% um die Titelseite per PDF-reader auszufüllen. Vorgefertigte Daten
+% können in Datei 'data.tex' modifiziert werden.
+%\setboolean{forminput}{true}
+% um die Anmerkungen zu den Textfeldern anzeigen zu lassen
+%\setboolean{showannotations}{true}
+% Erneuern der Seitenzahl in jedem Kapitel
+%\setboolean{chapResetPageNumb}{true}
+% Einbinden der Kapitelnummer in der Seitenzahl
+%\setboolean{chapWiseNumb}{true}
+% english or ngerman (new german für neue deutsche Rechtschreibung statt german)
+\SelectLanguage{ngerman}
+
+
+
+
+
+%% -----------------------
+%% |    Main Document    |
+%% -----------------------
+\begin{document}
+    % Titlepage und ToC
+    \FrontMatter
+
+    \input{include/titlepage} %\cleardoublepage
+
+    \begingroup \let\clearpage\relax    % in order to avoid listoffigures and
+    \tableofcontents                    % listoftables on new pages
+    \listoffigures
+    \listoftables
+    \endgroup
+    %\cleardoublepage
+
+
+
+    % Contents
+    \MainMatter
+    
+    %\emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
+                                        %        in toc]{name of the chapter}
+    %\pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
+                                        %        added]{name of the chapter}
+            
+    %\setcounter{chapter}{-1}
+    %\emptychapter[1]{Aufgabenstellung}{}
+    %\includepdf[pages=1, 
+    %pagecommand={\thispagestyle{fancy}}, 
+    %offset=2.5cm -2.5cm]{./fig/fig_aufgabenblatt}
+
+    %\includepdf[pages=2, 
+    %pagecommand={\thispagestyle{fancy}}, offset=-2.5cm 
+    %-0.5cm, trim=0cm 4cm 0cm 0cm, clip ]{./fig/fig_aufgabenblatt}
+
+	% \includepdf[pages=3, 
+    %pagecommand={\thispagestyle{fancy}}, offset=2.5cm 
+    %-0.5cm, trim=0cm 4cm 0cm 0cm, clip ]{./fig/fig_aufgabenblatt}
+    
+    \chapter{Vorbereitung}
+    \input{./chap/vorbereitung.tex} %\cleardoublepage
+    
+    %\chapter{Auswertung}
+    %\input{./chap/auswertung.tex} %\cleardoublepage
+
+    % appendix for more or less interesting calculations
+    %\Appendix
+    %\chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
+    % to make the appendix appear in ToC without number. \appendixname = 
+    % Appendix or Anhang (depending on chosen language)
+    %\input{./chap/appendix.tex} %\cleardoublepage
+
+	\begingroup
+	\let\clearpage\relax
+
+    % Bibliography
+    \TheBibliography
+
+    % BIBTEX
+    % use if you want citations to appear even if they are not referenced to: 
+    % \nocite{*} or maybe \nocite{Kon64,And59} for specific entries
+    %\nocite{*}
+    \bibliographystyle{plain}
+    \bibliography{lit.bib}
+
+    % THEBIBLIOGRAPHY
+    %\begin{thebibliography}{000}
+    %    \bibitem{ident}Entry into Bibliography.
+    %\end{thebibliography}
+    \endgroup
+\end{document}
