@@ -57,8 +57,8 @@ Der Schnittpunkt dieser Geraden mit der x-Achse entspricht dann der Auftrittsene
 
 Die Regression im linearen Bereich wurde mit Qtiplot durchgeführt, welches auch direkt den statistischen Fehler liefert. Die lineare Regression ergibt folgende Geraden:
 \begin{align}
-	\textrm{p}_{Ar+}(E) &= \left((0,7356\pm 0,0125)\cdot\frac{E}{eV} - (13,350\pm 0,2533)\right)10^{-7}\textrm{mbar}\\
-	\textrm{p}_{Ar++}(E) &= \left((0,1673\pm 0,0005)\cdot\frac{E}{eV} - (8,3097\pm 0,0334\right)10^{-8}\textrm{mbar}
+	\textrm{p}_{Ar+}(E) &= \left((0,7356\pm 0,0125)\cdot\frac{E}{\textrm{eV}} - (13,350\pm 0,2533)\right)10^{-7}\textrm{mbar}\\
+	\textrm{p}_{Ar++}(E) &= \left((0,1673\pm 0,0005)\cdot\frac{E}{\textrm{eV}} - (8,3097\pm 0,0334\right)10^{-8}\textrm{mbar}
 \end{align}
 Mittels Gaußscher Fehlerfortpflanzung (Gl. \ref{eq:gauss}) ergibt sich für die Auftrittsenergien:
 \begin{align}
@@ -68,7 +68,7 @@ Mittels Gaußscher Fehlerfortpflanzung (Gl. \ref{eq:gauss}) ergibt sich für die
 Vergleicht man die gemessenen Werte mit den Literaturwerten (E$_{a,Ar+}$ = 15,76\;eV, E$_{a,Ar++}$ = 43,39\;eV, \cite{Litmap}) so ergibt sich eine Abweichung von 15,2\;\% für einfach, bzw 14,5\;\% für zweifach ionisiertes Argon.\\
 In beiden Fällen liegt der Literaturwert außerhalb der Fehlergrenzen und die Werte sind deutlich höher als erwartet. Dies könnte an nicht beachteten systematische Fehlern liegen, oder an der Durchführung des Versuchs, da die Beschleunigungsspannung per Hand geregelt werden musste und somit nicht wirklich linear anstieg.\\
 \begin{equation}
-	\Delta E_a = \sqrt(\left(\frac{\partial E_a}{\partial c}\cdot\Delta c\right)^2 + \left(\frac{\partial E_a}{\partial m}\cdot\Delta m\right)^2)
+	\Delta E_a = \sqrt{\left(\frac{\partial E_a}{\partial c}\cdot\Delta c\right)^2 + \left(\frac{\partial E_a}{\partial m}\cdot\Delta m\right)^2}
 	\label{eq:gauss}
 \end{equation}
 
@@ -84,18 +84,18 @@ Wie in der Vorbereitung beschrieben (\ref{sec:v3}) müssen als Erstes die Auftri
 \end{figure}
 Es ergeben sich die folgenden Regressionsgeraden:
 \begin{align}
-\textrm{p}_{N+}(E) &= \left((0,2571\pm 0,0011)\cdot\frac{E}{eV} - (6,7936\pm 0,0383)\right)10^{-9}\textrm{mbar}\\
-\textrm{p}_{N++}(E) &= \left((0,2873\pm 0,0056)\cdot\frac{E}{eV} - (5,0472\pm 0,1152\right)10^{-7}\textrm{mbar}
+\textrm{p}_{N+}(E) &= \left((0,2571\pm 0,0011)\cdot\frac{E}{\textrm{eV}} - (6,7936\pm 0,0383)\right)10^{-9}\textrm{mbar}\\
+\textrm{p}_{N++}(E) &= \left((0,2873\pm 0,0056)\cdot\frac{E}{\textrm{eV}} - (5,0472\pm 0,1152\right)10^{-7}\textrm{mbar}
 \end{align}
 Mittels Gaußscher Fehlerfortpflanzung (Gl. \ref{eq:gauss}) lässt sich die Auftrittsenergie mit Unsicherheit bestimmen:
 \begin{align}
-E_{a,N+} &= (26,42\pm 0,19)\;eV\\
-E_{a,N_2^+} &= (17,57\pm 0,53)\;eV
+E_{a,N+} &= (26,42\pm 0,19)\;\textrm{eV}\\
+E_{a,N_2^+} &= (17,57\pm 0,53)\;\textrm{eV}
 \end{align}
 Mit Kenntnis der Ionisationsenergie von Stickstoff (E$_\textrm{I}$ = 14,5\;eV) können nun die Dissoziationsenergien bestimmt werden:
 \begin{align}
-	E_\textrm{D}(N_2) &= E_a(N^+) - E_a(N_2^+) = (11,92\pm 0,56)\;eV\\
-	E_\textrm{D}(N_2^+) &= E_a(N^+) - E_\textrm{I} = (8,85\pm 0,19)\;eV
+	E_\textrm{D}(N_2) &= E_a(N^+) - E_a(N_2^+) = (11,92\pm 0,56)\;\textrm{eV}\\
+	E_\textrm{D}(N_2^+) &= E_a(N^+) - E_\textrm{I} = (8,85\pm 0,19)\;\textrm{eV}
 \end{align}
 Vergleicht man die gemessenen Werte mit den Literaturwerte (E$_\textrm{D}$(N$_2^+$) = 8,713\;eV, E$_\textrm{D}$(N$_2$) = 9,759\;eV, \cite{kobra}) so
 ergibt sich eine Abweichung von 22,1\% für neutrales, bzw 1,6\% für einfach ionisierten molekularen Stickstoff.\\
