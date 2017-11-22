@@ -1,14 +1,63 @@
-In diesem Versuch wird die Materialanalyse mit Hilfe von Röntgenstrahlung kennengelernt. Es handelt sich dabei um eine Technik mit der Eigenschaften von Materialien wie zum Beispiel die Schichtdicke oder die Zusammensetzung bestimmt werden können. Daher findet sie unter anderem in der Materialwissenschaft und in der Industrie bei der Qualitätskontrolle Anwendung.
+In diesem Versuch wird die Materialanalyse mit Hilfe von Röntgenstrahlung kennengelernt. Es handelt sich dabei um eine Technik, mit der Eigenschaften von Materialien wie zum Beispiel die Schichtdicke oder die Zusammensetzung bestimmt werden können. Daher findet sie unter anderem in der Materialwissenschaft und in der Industrie bei der Qualitätskontrolle Anwendung.
 Des Weiteren wird diese Technik auch bei der Gepäckkontrolle an Flughäfen angewendet.
 
 \section{Erzeugung von Röntgenstrahlung}
 
-Bei Röntgenstrahlung handelt es sich um elektromeagnetische Strahlung im Wellenlängenbereich $\lambda=\SI{250}{\pico\metre}$ bis $\SI{1}{\femto\metre}$. Es gibt zwei Methoden diese zu erzeugen, die charakteristische Strahlung und die Bremsstrahlung.
+Bei Röntgenstrahlung handelt es sich um elektromagnetische Strahlung im Wellenlängenbereich $\lambda=\SI{250}{\pico\metre}$ bis $\SI{1}{\femto\metre}$. Es gibt zwei Methoden diese zu erzeugen, die charakteristische Strahlung und die Bremsstrahlung.
 
 \subsection{Charakteristische Röntgenstrahlung}
 
 Die charakteristische Strahlung entsteht bei Abregung von Elektronen aus höheren Schalen in schweren Atomen, wie zum Beispiel Eisen oder Wolfram. Dazu wird das Material mit schnellen Elektronen beschossen.
-Die emittierte Strahlung besitzt diskrete Frequenzen gemäß
+Die emittierte Strahlung besitzt diskrete Frequenzen gemäß dem Moseley-Gesetz \cite{litmap}
 \begin{equation}
- \hbar\omega = E_{m}-E_{n}.
+ E = \hbar\omega = E_{m}-E_{n} = Rh\left(Z-\sigma\right)^{2}\left(\frac{1}{m^{2}}-\frac{1}{n^{2}}\right),
 \end{equation}
+mit der Rydbergfrequenz $R$, der Kernladung $Z$ und der von $m$ und $n$ abhängigen Abschirmkonstante $\sigma$.
+Die Frequenz hängt also sowohl von der Ausgangsschale als auch von der Schale im Endzustand ab. Daher wird charakteristische Strahlung mit einem Großbuchstaben für die Endschale und einem griechischen Buchstaben, der die Ausgangsschale angibt, bezeichnet.
+Also zum Beispiel K$_{\alpha}$ für den Übergang von der L- zur K-Schale, etc.
+
+\subsection{Bremsstrahlung}
+
+Werden Elektronen auf eine Kathode geschossen, so werden sie auf dieser abgebremst und verlieren dabei ihre kinetische Energie (teilweise) und geben sie in Form von Röntgenstrahlung ab.
+Das zugehörige Spektrum ist kontinuierlich, unterhalb einer Frequenz von
+\begin{equation}
+ \omega = \frac{eU}{\hbar},
+\end{equation}
+wobei $U$ die Beschleunigungsspannung bezeichnet.
+
+\section{Wechselwirkung mit Materie}
+
+Es gibt drei Prozesse, über die Röntgenstrahlung mit Materie wechselwirkt: \cite{Dem16}
+\begin{itemize}
+ \item Photoeffekt: Ein Röntgenquant schlägt dabei ein Elektron aus einer tieferen Schale heraus. Dieser Effekt ist der in diesem Versuch dominierende.
+ \item Comptoneffekt: Hierbei stößt ein Röntgenquant mit einem Elektron aus einer äußeren Schale und überträgt dabei nur einen Teil seiner Energie.
+ \item Paarbildung: Es kann auch zur Bildung eines Elektron-Positron-Paars kommen, falls $E\geq 2m_{e}c^{2}$.
+\end{itemize}
+Bei der Absorption von Röntgenstrahlung beobachtet man sogenannte Absorptionskanten. Diese treten auf, wenn die Energie der Röntgenstrahlung gerade ausreicht, um ein Elektron aus einer tieferen Schale zu ionisieren.
+
+\section{Kalibrierung des Röntgenenergiedetektors (RED)}
+
+Beim im Versuch verwendeten RED handelt es sich um einen Si-pin-Detektor. Dieser funktioniert folgendermaßen: Ein einfallendes Röntgenquant erzeugt durch den Photoeffekt ein freies Elektron, dessen kinetische Energie von der Energie des Quants abhängt.
+Die Elektronen erzeugen nun im Si-Kristall Elektron-Loch-Paare. Deren Anzahl ist ein Maß für die Röntgenenergie. Das Absaugen der Elektron-Loch-Paare mit einer äußeren Spannung führt zu einem Ladungsimpuls im Vielkanalanalysator (VKA).
+
+Um den RED zu kalibrieren, muss nun die Impulshöhe einem Energiewert (also einer Frequenz) zugeordnet werden. Dazu werden bekannte charakteristische Linien verwendet.
+
+\section{Bestimmung der Energieauflösung des RED}
+
+In diesem Versuchsteil wird die Energieauflösung des RED bestimmt. Die ausgesandte charakteristische Strahlung besitzt eine endliche Linienbreite. Zum einen besitzt sie die natürliche Linienbreite $\Gamma$, die durch die Heisenbergsche Energie-Zeit-Unschärferelation hervorgerufen wird.
+Die tatsächlich gemessene Linienbreite ist jedoch deutlich größer. Die Gründe dafür sind unter anderem inelastische Streuung des Röntgenquants im Kristall, bei der Elektron-Loch-Paare erzeugt werden, und das Rauschen des VKA.
+Für die Energieauflösung gilt \cite{litmap}
+\begin{equation}
+ \frac{\Delta E_{\textrm{FWHM}}}{E} = \sqrt{8\ln2}\sqrt{\frac{E_{i}}{E}},
+\end{equation}
+wobei $E_{i}$ die Energie ist, die zur Erzeugung eines Elektron-Loch-Paares benötigt wird.
+
+\section{Qualitative Röntgenfluoreszenzanalyse an Metallen}
+
+In diesem Versuch werden die Energien der charakteristischen K$_{\alpha}$- und K$_{\beta}$-Linien von Eisen und Wolfram gemessen. Daraus werden dann die Rydberg-Frequenz und die Abschirmkonstanten bestimmt.
+Nach dem Moseley-Gesetz gilt (s. Abschnitt 1.1.1)
+\begin{align}
+ \textrm{K}_{\alpha}: \quad \sqrt{E} &= \frac{\sqrt{3Rh}}{2}\left(Z-\sigma_{2,1}\right), \\ 
+ \textrm{K}_{\beta}: \quad \sqrt{E} &= \frac{\sqrt{8Rh}}{3}\left(Z-\sigma_{3,1}\right).
+\end{align}
+
