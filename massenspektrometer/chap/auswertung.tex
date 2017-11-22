@@ -304,4 +304,31 @@ Die Abweichung vom Literaturwert beträgt also ca. $34\%$ und liegt außerhalb d
 
 \section{Restgasanalyse}
 
-
+Um die Temperaturabhängigkeit der Zusammensetzung des Gases in der Messkammer zu überprüfen, wurden erneut zwei Restgasspektren aufgenommen.
+Dabei wurde die Kammer für das zweite Spektrum mit flüssigem Stickstoff auf ca. 77\;K herunter gekühlt.\\
+\begin{figure}[H]
+	\centering
+	\subfigure[]{\includegraphics[width=0.49\textwidth]{fig/restgas_raumtemp}}
+	\subfigure[]{\includegraphics[width=0.49\textwidth]{fig/restgas_kalt}}
+	\caption{Restgasspektren bei unterschiedlichen Temperaturen.}
+	\label{fig:plot_restgas}
+\end{figure}
+Die durch die Sensitivität korrigierten Drücke sind in Tabelle \ref{tab:a7_peaks} aufgeführt.\\
+\begin{table}[tb]
+	\centering
+	\caption{Messwerte der  Partialdrücke}
+	\label{tab:a7_peaks}
+	\begin{tabular}{ccc} \toprule
+		&\multicolumn{2}{c}{Partialdruck in 10$^-10$\;mbar}\\
+		\cmidrule{2-3}
+		Molekül & T $\approx$ 300\;K & T $\approx$ 77\;K\\ \midrule
+		H$_2$ & $2,13$ & $1,44$ \\
+		H$_2$O & $7,95$ & $2,05$ \\
+		N$_2$ & $2,34$ & $1,73$ \\
+		O$_2$ & $0,53$ & $0,53$ \\
+		CO$_2$ & $3,06$ & $0,92$ \\ 
+		\bottomrule
+	\end{tabular}
+\end{table}\\
+Die Summe der Partialdrücke beträgt $1,6\cdot 10^{-9}$. Dies ist deutlich geringer als der in der Ionisationskammer gemessene Druck. Das liegt daran, dass nicht alle Gasmoleküle ionisiert werden und somit auch nicht detektiert werden können.\\
+Wie man gut sieht, nimmt vor allem der Anteil von Wasser und Kohlenstoffdioxid stark ab. Dies liegt daran, dass der Schmelzpunkt der beiden Moleküle über 77\;K liegt, sie liegen also in fester Phase vor und können so nicht mehr richtig detektiert werden.\\
