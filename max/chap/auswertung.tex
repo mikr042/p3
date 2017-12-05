@@ -53,15 +53,28 @@ Der letzte Wert, der bei einem Emissionsstrom von 1\;mA gemessen wurde,liegt auf
 
 \section{Qualitative Röntgenfluoreszensanalyse}
 
-Regressionsgerade:
+Die Daten wurden nicht neu gemessen, sondern nach Absprache mit dem Betreuer aus den Messungen des ersten Versuchs übernommen.
+\begin{figure}[h]
+	\centering\includegraphics[width=0.8\textwidth]{fig/a3_fit}
+	\caption{Lineare Regression zur Bestimmung der Rydberg- und Moseleykonstante.}
+	\label{fig:a3_fit}
+\end{figure}
+Die Regression $m\cdot Z + C$ in Abb. \ref{fig:a3_fit} wurde mit Qtiplot durchgeführt und hat folgende Werte:
+\begin{align}
+	m &= 0,10342\pm 0,00015\\
+	c &= -0,162\pm 0,005
+\end{align}
+Mit Gaußscher Fehlerfortpflanzung und Gleichung \ref{eq:rhydberg} lässt sich die Rydbergkonstante bestimmen:
 \begin{equation}
-	0,10342\pm 0,00015 - 0,162\pm 0,005
+	R_{\infty} = (1,150\cdot 10^{7}\pm 3,3\cdot 10^{4})\;\si{\metre}^{-1}
 \end{equation}
 
-$R_{\infty} = 3,4479335\cdot 10^{15}$
-
-Mit Gaußscher Fehlerfortpflanzung blabla plusminus
-%muss noch durch c teilen, da man so die frequenz raus bekommt, wert kommt aber gut hin
+Die Abschirmungskonstante $\sigma_{2,1}$ kann mithilfe von Gleichung \ref{eq:abschirm} bestimmt werden:
+\begin{equation}
+	\sigma_{2,1} = 1,604\pm 0,002
+\end{equation}
+Da die K$_\beta$-Linien nicht klar erkennbar waren, da die Auflösung des Röntgendetektors zu schlecht ist, lässt sich keine Aussage zur Abschirmkonstante $\sigma_{3,1}$ treffen.\\
+Die Abweichung der gemessenen Rydbergkonstante zum Literaturwert beträgt nur 4,7\;\%.
 
 \section{Bestimmung der Schichtdicke dünner Folien}
 

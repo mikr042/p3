@@ -88,13 +88,22 @@ Nach dem Moseley-Gesetz gilt (s. Abschnitt 1.1.1)
  \textrm{K}_{\beta}: \quad \sqrt{E} &= \frac{\sqrt{8Rh}}{3}\left(Z-\sigma_{3,1}\right).
 \end{align}
 
-Zur Auswertung werden die Messwerte aus der ersten Aufgabe verwendet. Durch Auftragen der Energien der K$_\alpha$-Linien über die Kernladungszahlen der verschiedenen Elemente lässt sich also die Rydbergkonstante R$_\infty$ und die Abschirmungskonstante $\sigma_{2,1}$ mittels linearer Regression bestimmen.\\
-Bei einer Steigung $m$ der Regressionsgeraden beträgt die Die Rydbergkonstante somit:
+Durch Auftragen der Energien der K$_\alpha$-Linien über die Kernladungszahlen der verschiedenen Elemente lässt sich also die Rydbergkonstante R$_\infty$ und die Abschirmkonstante $\sigma_{2,1}$ mittels linearer Regression bestimmen.\\
+Bei einer Steigung $m$ der Regressionsgeraden beträgt die Rydbergfrequenz somit:
 \begin{equation}
-	R_{\infty} = \frac{4m^2}{3h}
+	R = \frac{4m^2}{3h}
 	\label{eq:rhydberg}
 \end{equation}
+Daraus lässt sich die Rydbergkonstante bestimmen:
+\begin{equation}
+	R_{\infty} = \frac{R}{c}
+\end{equation}
 
+Die Abschirmkonstante lässt sich aus dem y-Achsenabstand $C$ bestimmen, da bekannt ist, dass $Rh = 13,6$\;eV (\cite{litmap}):
+\begin{equation}
+	\sigma = \frac{-2C}{\sqrt{3Rh}}
+	\label{eq:abschirm}
+\end{equation}
 \section{Bestimmung der Schichtdicke dünner Folien}
 
 Beim Durchgang durch Materie wird Röntgenstrahlung gemäß einem Exponentialgesetz abgeschwächt. Für die Intensität $I$ nach der Strecke $x$ gilt

@@ -44,6 +44,26 @@ WindowLabel	Linear Regression of Table1_2	2
 4	47	21.98296551724
 </data>
 </table>
+<table>
+Linear2	5	2	12/5/17 2:53 PM
+geometry	958	0	445	220	hidden
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel	Linear Regression of Table1_2	2
+<data>
+0	26	2.526514539854
+1	28	2.733347279351
+2	29	2.8367636491
+3	30	2.940180018849
+4	47	4.698258304579
+</data>
+</table>
 <multiLayer>
 Graph1	1	1	12/5/17 2:53 PM
 geometry	445	0	513	467	active
@@ -56,21 +76,19 @@ Alignement	0	0
 <CommonAxes>0</CommonAxes>
 <graph>
 ggeometry	5	5	495	398
-<PageGeometry>0.00990099	0.0121065	0.980198	0.96368</PageGeometry>
+<PageGeometry>0.00990099	0.0118765	0.980198	0.945368</PageGeometry>
 PlotTitle	 	#000000	4228
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
-<SyncScales>1</SyncScales>
 <ScaleFonts>1</ScaleFonts>
 <GridOnTop>0</GridOnTop>
 <MissingDataGap>1</MissingDataGap>
-<ClipData>1</ClipData>
 Background	#ffffff	0
 Margin	0
 Border	0	#000000
 grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
 EnabledAxes	1	1	1	1	
-AxesTitles	Kernladungszahl Z	√E		%(?Y)	
+AxesTitles	Kernladungszahl Z	√E in √(keV)		 	
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	5124	5124	5124	5124
 AxesTitleDistance	2	2	2	2
@@ -111,26 +129,6 @@ EnabledTickLabels	1	1	1	1
 <LinkXAxes>0</LinkXAxes>
 <ScaleLayers>1</ScaleLayers>
 </multiLayer>
-<table>
-Linear2	5	2	12/5/17 2:53 PM
-geometry	958	0	445	220	hidden
-header	1[X]	2[Y]
-ColWidth	100	100	
-<com>
-</com>
-ColType	0;0/13	0;0/13
-ReadOnlyColumn	0	0
-HiddenColumn	0	0
-Comments			
-WindowLabel	Linear Regression of Table1_2	2
-<data>
-0	26	2.526514539854
-1	28	2.733347279351
-2	29	2.8367636491
-3	30	2.940180018849
-4	47	4.698258304579
-</data>
-</table>
 <open>1</open>
 <log>
 [12/5/17 2:47 PM	Plot: ''Graph1'']
@@ -159,4 +157,5 @@ Adjusted R^2 = 1
 RMSE (Root Mean Squared Error) = 0.002536
 RSS (Residual Sum of Squares) = 1.929e-05
 ---------------------------------------------------------------------------------------
+
 </log>
