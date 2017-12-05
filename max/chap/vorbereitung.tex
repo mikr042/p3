@@ -56,12 +56,16 @@ Dabei handelt es sich bei N(a,b) um eine gau\ss sche Normalverteilung mit Mittel
 
 In diesem Versuchsteil wird die Energieauflösung des RED bestimmt. Die ausgesandte charakteristische Strahlung besitzt eine endliche Linienbreite. Zum einen besitzt sie die natürliche Linienbreite $\Gamma$, die durch die Heisenbergsche Energie-Zeit-Unschärferelation hervorgerufen wird.
 Die tatsächlich gemessene Linienbreite ist jedoch deutlich größer. Die Gründe dafür sind unter anderem inelastische Streuung des Röntgenquants im Kristall, bei der Elektron-Loch-Paare erzeugt werden, und das Rauschen des VKA.
-Für die Energieauflösung gilt \cite{litmap}
+Für die Energieauflösung gilt \cite{litmap} %Ist das nicht das Auflösungsvermögen? Auflösung ist dann der Kehrwert davon!
 \begin{equation}
  \frac{\Delta E_{\textrm{FWHM}}}{E} = \sqrt{8\ln2}\sqrt{\frac{E_{i}}{E}},
 \end{equation}
-wobei $E_{i}$ die Energie ist, die zur Erzeugung eines Elektron-Loch-Paares benötigt wird.\\
-Um die Energieauflösung zu bestimmen wird ohne Blende die Zn-Probe bei unterschiedlichen Emissionsströmen gemessen. Es wurden die auf dem Aufgabenblatt beschriebenen Einstellungen und Messvorgaben verwendet.
+wobei $E_{i}$ die Energie ist, die zur Erzeugung eines Elektron-Loch-Paares benötigt wird. Da bei der Durchführung des Versuchs eine skalierte Normalverteilung an die Röntgenpeaks gefittet wird, können die Varianz $b$ und der Mittelwert $a$ (durch die Kalibrierung in Energie $E_0$ umgerechnet) zur Bestimmung der Halbwertsbreite genutzt werden. Die Formel vereinfacht sich dann zu:
+\begin{equation}
+	A = \frac{\Delta_{FWHM}}{E_0} = 2\sqrt{2\ln 2}\cdot\frac{\sigma}{E_0}
+	\label{eq:aufloesung}
+\end{equation}\\
+Um die Energieauflösung zu bestimmen wird ohne Blende die Zn-Probe bei unterschiedlichen Emissionsströmen vermessen. Es wurden die auf dem Aufgabenblatt beschriebenen Einstellungen und Messvorgaben verwendet.\\
 
 \section{Qualitative Röntgenfluoreszenzanalyse an Metallen}
 
@@ -71,6 +75,8 @@ Nach dem Moseley-Gesetz gilt (s. Abschnitt 1.1.1)
  \textrm{K}_{\alpha}: \quad \sqrt{E} &= \frac{\sqrt{3Rh}}{2}\left(Z-\sigma_{2,1}\right), \\ 
  \textrm{K}_{\beta}: \quad \sqrt{E} &= \frac{\sqrt{8Rh}}{3}\left(Z-\sigma_{3,1}\right).
 \end{align}
+
+Zur Auswertung werden die Messwerte aus der ersten Aufgabe verwendet.
 
 \section{Bestimmung der Schichtdicke dünner Folien}
 

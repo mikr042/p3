@@ -1,0 +1,404 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	4
+<table>
+Table1	29	2	05/12/2017 12:49
+geometry	0	0	445	220	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	163.9	8.61
+1	937.8	8.58
+2	1597.7	8.54
+3	2321.4	8.44
+4	2885.8	8.12
+5	2885.8	7.58
+</data>
+</table>
+<table>
+Table2	29	2	05/12/2017 12:50
+geometry	445	0	445	220	active
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	163.9	0.82
+1	937.8	0.85
+2	1597.7	0.87
+3	2321.4	0.94
+4	2885.8	1.15
+5	2885.8	1.48
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	05/12/2017 12:53
+geometry	890	0	519	459	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	501	398
+<PageGeometry>0.00978474	0.0121065	0.980431	0.96368</PageGeometry>
+PlotTitle	Title	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	Sans Serif	9	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	Sans Serif	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#657b83	#657b83	#657b83	#657b83
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table2_1	Table2_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	29	1
+scale	0	0.8	1.5	0	8	5	0	0
+scale	1	0.8	1.5	0	8	5	0	0
+scale	2	0	3000	0	7	5	0	0
+scale	3	0	3000	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph2	1	1	05/12/2017 12:53
+geometry	0	220	519	459	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	501	398
+<PageGeometry>0.00978474	0.0121065	0.980431	0.96368</PageGeometry>
+PlotTitle	Title	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	Sans Serif	9	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	Sans Serif	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#657b83	#657b83	#657b83	#657b83
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	29	1
+scale	0	7.4	8.8	0	8	5	0	0
+scale	1	7.4	8.8	0	8	5	0	0
+scale	2	0	3000	0	7	5	0	0
+scale	3	0	3000	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[03/12/2017 15:01	Plot: ''Graph1'']
+Linear Regression of dataset: Table1_2, using function: A*x+B
+Weighting Method: No weighting
+From x = 1.789000000000000e+03 to x = 1.645000000000000e+03
+B (y-intercept) = 1.365762523603244e+00 +/- 1.565779614182115e-02
+A (slope) = 4.059202488059535e-03 +/- 9.939941322272487e-06
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.601132955682413e-05
+R^2 = 0.999994003696518
+RMSE (Root Mean Squared Error) = 0.00400141594399041
+RSS (Residual Sum of Squares) = 1.60113295568207e-05
+---------------------------------------------------------------------------------------
+[05/12/2017 13:11	Plot: ''Graph2'']
+Exponential decay of dataset: Table1_2, using function: y0+A*exp(-x/t)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.639000000000000e+02 to x = 2.885800000000000e+03
+A (amplitude) = 4.998000000000000e-01 +/- 7.019987396000022e+86
+t (e-folding time) = 1.000000000000000e+00 +/- 8.569611366206059e+84
+y0 (offset) = 8.115100000000000e+00 +/- 3.416828870641603e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.735910249999992e-01
+R^2 = -3.69099730035157
+Adjusted R^2 = -17.7639892014063
+RMSE (Root Mean Squared Error) = 0.611220929779077
+RSS (Residual Sum of Squares) = 0.747182049999998
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[05/12/2017 13:12	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table2_2, using function: y0+A*exp(-x/t)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.639000000000000e+02 to x = 2.885800000000000e+03
+A = -3.797375977568088e+03 +/- 1.198654229880005e+08
+t = 3.543116590660515e+07 +/- 1.118461614370516e+12
+y0 = 3.798132502972799e+03 +/- 1.198654230623931e+08
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.424220880545464e-03
+R^2 = 0.761082788413345
+Adjusted R^2 = 0.0443311536533788
+RMSE (Root Mean Squared Error) = 0.0917835545211966
+RSS (Residual Sum of Squares) = 0.0168484417610909
+---------------------------------------------------------------------------------------
+Iterations = 56
+Status = success
+---------------------------------------------------------------------------------------
+[05/12/2017 13:12	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table2_2, using function: y0+A*exp(-x/t)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.639000000000000e+02 to x = 2.885800000000000e+03
+A = 2.098300416174593e+05 +/- 1.177117778515695e+08
+t = -1.957854848142691e+09 +/- 1.098055619839683e+12
+y0 = -2.098292851046684e+05 +/- 1.177117778386151e+08
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8.423918184237772e-03
+R^2 = 0.761091373107267
+Adjusted R^2 = 0.044365492429067
+RMSE (Root Mean Squared Error) = 0.0917819055382801
+RSS (Residual Sum of Squares) = 0.0168478363684755
+---------------------------------------------------------------------------------------
+Iterations = 6
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[05/12/2017 13:14	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table2_2, using function: y0+A*exp(-x/t)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.639000000000000e+02 to x = 2.885800000000000e+03
+A = -2.977186637365288e+05 +/- 2.480030397641842e+08
+t = 3.093717687060806e+10 +/- 2.578989407268068e+13
+y0 = 2.977194204226115e+05 +/- 2.480030398168698e+08
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9.002121136856919e-02
+R^2 = -1.55306895543305
+Adjusted R^2 = -9.21227582173219
+RMSE (Root Mean Squared Error) = 0.300035350198221
+RSS (Residual Sum of Squares) = 0.180042422737138
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[05/12/2017 13:21	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table2_2, using function: y0+A*exp(-x/t)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.639000000000000e+02 to x = 2.885800000000000e+03
+A = 4.138771020299778e-01 +/- 2.217889745167309e+06
+t = 1.014422221980390e+01 +/- 0.000000000000000e+00
+y0 = 9.361818384056613e-01 +/- 9.513609612164238e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.551917920840964e-02
+R^2 = -0.00735051640413098
+Adjusted R^2 = -3.02940206561652
+RMSE (Root Mean Squared Error) = 0.18846532627624
+RSS (Residual Sum of Squares) = 0.0710383584168193
+---------------------------------------------------------------------------------------
+Iterations = 5
+Status = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[05/12/2017 13:21	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table2_2, using function: y0+A*exp(-x/t)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.639000000000000e+02 to x = 2.885800000000000e+03
+A = -7.210209767042568e+01 +/- 8.948334731450240e+17
+t = 2.601894659803883e+01 +/- 5.126191073591518e+16
+y0 = 9.524999999999779e-01 +/- 3.863749479870730e+06
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.823749999999835e-02
+R^2 = 0.199163357912695
+Adjusted R^2 = -2.20334656834922
+RMSE (Root Mean Squared Error) = 0.168040173768056
+RSS (Residual Sum of Squares) = 0.0564749999999967
+---------------------------------------------------------------------------------------
+Iterations = 28
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[05/12/2017 13:21	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table2_2, using function: y0+A*exp(-x/t)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.639000000000000e+02 to x = 2.885800000000000e+03
+A = -7.210209767043000e+01 +/- 0.000000000000000e+00
+t = 2.601894659804000e+01 +/- 5.856696560612002e+00
+y0 = 9.525000000000000e-01 +/- 8.402008688194977e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.823749999999835e-02
+R^2 = 0.199163357912695
+Adjusted R^2 = -2.20334656834922
+RMSE (Root Mean Squared Error) = 0.168040173768056
+RSS (Residual Sum of Squares) = 0.0564749999999967
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[05/12/2017 13:21	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table2_2, using function: y0+A*exp(-x/t)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.639000000000000e+02 to x = 2.885800000000000e+03
+A = -7.210209767043000e+01 +/- 0.000000000000000e+00
+t = 2.601894659804000e+01 +/- 5.856696560612002e+00
+y0 = 9.525000000000000e-01 +/- 8.402008688194977e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.823749999999835e-02
+R^2 = 0.199163357912695
+Adjusted R^2 = -2.20334656834922
+RMSE (Root Mean Squared Error) = 0.168040173768056
+RSS (Residual Sum of Squares) = 0.0564749999999967
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[05/12/2017 13:21	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table2_2, using function: y0+A*exp(-x/t)
+Weighting Method: No weighting
+Unscaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.639000000000000e+02 to x = 2.885800000000000e+03
+A = -7.210209767112759e+01 +/- 0.000000000000000e+00
+t = 2.601894661021738e+01 +/- 5.856696563158951e+00
+y0 = 9.524999995914417e-01 +/- 8.402008687730787e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.823749999999834e-02
+R^2 = 0.199163357912695
+Adjusted R^2 = -2.20334656834922
+RMSE (Root Mean Squared Error) = 0.168040173768056
+RSS (Residual Sum of Squares) = 0.0564749999999967
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[05/12/2017 13:22	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table2_2, using function: y0+A*exp(-x/t)
+Weighting Method: No weighting
+Unscaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.639000000000000e+02 to x = 2.885800000000000e+03
+A = -7.210209767113000e+01 +/- 8.948334731450240e+17
+t = 2.601894661022000e+01 +/- 5.126191064008667e+16
+y0 = 9.524999995914000e-01 +/- 2.897811584777505e+06
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.823749999999835e-02
+R^2 = 0.199163357912695
+Adjusted R^2 = -2.20334656834922
+RMSE (Root Mean Squared Error) = 0.168040173768056
+RSS (Residual Sum of Squares) = 0.0564749999999967
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[05/12/2017 13:22	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table2_2, using function: y0+A*exp(-x/t)
+Weighting Method: No weighting
+Nelder-Mead Simplex algorithm with tolerance = 0.0001
+From x = 1.639000000000000e+02 to x = 2.885800000000000e+03
+A = -7.209085832459867e+01 +/- 2.160497493083280e-159
+t = 2.601959064075050e+01 +/- 5.126191064008667e+16
+y0 = 9.524999998444594e-01 +/- 2.897811584777505e+06
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.823749999999835e-02
+R^2 = 0.199163357912695
+Adjusted R^2 = -2.20334656834922
+RMSE (Root Mean Squared Error) = 0.168040173768056
+RSS (Residual Sum of Squares) = 0.0564749999999967
+---------------------------------------------------------------------------------------
+Iterations = 10000
+Status = the iteration has not converged yet
+---------------------------------------------------------------------------------------
+[05/12/2017 13:23	Plot: ''Graph1'']
+Non-linear Fit of dataset: Table2_2, using function: y0+A*exp(-x/t)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 1.639000000000000e+02 to x = 2.885800000000000e+03
+A = 1.307188495851420e+00 +/- 9.887446331498078e+08
+t = 6.185922696623736e+00 +/- 0.000000000000000e+00
+y0 = 9.260000001425699e-01 +/- 1.290370317664745e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3.526000000043124e-02
+R^2 = -1.22306609284806e-11
+Adjusted R^2 = -3.00000000004892
+RMSE (Root Mean Squared Error) = 0.18777646284993
+RSS (Residual Sum of Squares) = 0.0705200000008625
+---------------------------------------------------------------------------------------
+Iterations = 6
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+</log>

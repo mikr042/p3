@@ -23,17 +23,47 @@ Die gefitteten Peaks der einzelnen Proben befinden sich in Tabelle \ref{tab:a1_p
 
 \xtable{htb}{a1_peaks}{Messwerte der Fits unterschiedlicher Röntgenspektren}{(Aufg. 1)}
 
-Die Gleichung der mit Hilfe von QtiPlot an die Messwerte gefitteten Gerade (s. Abb. \ref{fig:a1_fit}) inkl. statistischer Fehler sieht folgendermaßen aus:
+Die Gleichung der mit Hilfe von QtiPlot an die Messwerte f\"ur V = 2 gefitteten Gerade (s. Abb. \ref{fig:a1_fit}) inkl. statistischer Fehler sieht folgendermaßen aus:
 \begin{equation}
-	E(K) = (0,00807\pm 0,00002)K\cdot\si{\kilo\electronvolt} + (1,40\pm 0,04)\cdot\si{\kilo\electronvolt}
+	E_2(K) = (0,00807\pm 0,00002)K\cdot\si{\kilo\electronvolt} + (1,40\pm 0,04)\cdot\si{\kilo\electronvolt}
 \end{equation}
 
 \begin{figure}[h]
 	\centering\includegraphics[width=0.8\textwidth]{fig/a1_fit}
-	\caption{Skalierungsgerade zur Eichung des Röntgendetektors.}
+	\caption{Skalierungsgerade zur Eichung des Röntgendetektors mit V = 2.}
 	\label{fig:a1_fit}
 \end{figure}
 
 Es ist zu erkennen, dass die Messwerte der Röntgenstrahlung ohne Materialprobe als einzige von der Geraden abweichen und die Regression bei niedrigeren Kanalnummern nach oben ziehen. Dies liegt daran, dass die Zählrate in diesem Versuchsteil zu hoch war und der VKA somit überfordert wurde. Die Messwerte sind daher in Abb. \ref{fig:a1_fit} aufgeführt, wurden aber für die lineare Regression nicht verwendet.
 
+Da zur Bestimmung der Energieauflösung die Verstärkungsstufe 4 benutzt wurde, wird auch zu diesen Messwerten eine Kalibrierung durchgeführt.
+\begin{equation}
+	E_4(K) = (0,00406\pm 0,00001)K\cdot\si{\kilo\electronvolt} + (1,366\pm 0,016)\cdot\si{\kilo\electronvolt}
+\end{equation} 
+
+\begin{figure}[h]
+	\centering\includegraphics[width=0.8\textwidth]{fig/a1_fit_4}
+	\caption{Skalierungsgerade zur Eichung des Röntgendetektors mit V = 4.}
+	\label{fig:a1_fit_4}
+\end{figure}
+
 \section{Bestimmung der Energieauflösung des RED}
+Der Versuch wurde wie in der Vorbereitung beschrieben durchgeführt.
+Die gemessenen und aus den Messwerten errechneten Werte befinden sich in Tabelle \ref{tab:a2}.\\
+
+\xtable{htb}{a2}{Messwerte zur Bestimmung der Energieauflösung}{(Aufg. 2)}
+
+In Abbildung \ref{fig:a2_energie_breite} sind die gemessene Energie der K$_\alpha$ Linie von Zink und der Halbwertsbreite dieser Linie gegen die Zählrate aufgetragen.
+
+\begin{figure}[h]
+	\centering
+	\subfigure[]{\includegraphics[width=0.49\textwidth]{fig/a2_energie}}
+	\subfigure[]{\includegraphics[width=0.49\textwidth]{fig/a2_breite}}
+	\caption{\textbf{a)} Energie der K$_\alpha$-Linie gegen die Zählrate aufgetragen, \textbf{b)} Halbwertsbreite der K$_\alpha$-Linie.}
+	\label{fig:a2_energie_breite}
+\end{figure}
+
+Der letzte Wert, der bei einem Emissionsstrom von 1\;mA gemessen wurde nicht in die Regression mit einbezogen, da er auf der gleichen Zählrate wie der Wert für 0,5\;mA liegt. Das liegt vermutlich daran, dass der VKA nur maximal 2885 Ereignisse pro Sekunde aufzeichnen kann und somit beide Werte über dieser Schwelle liegen.\\
+
+\section{Qualitative Röntgenfluoreszensanalyse}
+
