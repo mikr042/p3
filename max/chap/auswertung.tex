@@ -67,3 +67,135 @@ Der letzte Wert, der bei einem Emissionsstrom von 1\;mA gemessen wurde nicht in 
 
 \section{Qualitative Röntgenfluoreszensanalyse}
 
+
+\section{Bestimmung der Schichtdicke dünner Folien}
+
+In diesem Versuch wird die Schichtdicke von Aluminiumfolie mit Hilfe des RED gemessen. Dazu wird eine Eisenprobe verwendet, mit Alufolie abgedeckt, und die Abschwächung der Intensität der charakteristischen Linien in Abhängigkeit der Anzahl der Folien gemessen.
+Wie in der Vorbereitung beschrieben gilt für die Intensität
+\begin{equation}
+ I = I_{0}\exp\left(\mu\rho x\right),
+\end{equation}
+mit der Anfangsintensität $I_{0}$, der Dichte $\rho$ und dem Massenabsorptionskoeffizienten $\mu$.
+Daraus ergibt sich
+\begin{equation}
+ \ln\left(\frac{I}{I_{0}}\right) = \mu\rho x.
+\end{equation}
+Für die Strecke $x$ gilt
+\begin{equation}
+ x = \sqrt{2}dn,
+\end{equation}
+mit der Schichtdicke $d$ und der Anzahl der Schichten $n$. Der Vorfaktor kommt daher, dass die Probe in einem Winkel von $\alpha=\SI{45}{\degree}$ zur Strahlrichtung steht (s. Abb. \ref{fig:41}). 
+Insgesamt ergibt sich also
+\begin{equation}
+ \ln\left(\frac{I}{I_{0}}\right) = \sqrt{2}\mu\rho dn. 
+\end{equation}
+Die Schichtdicke kann nun aus einer linearen Regression der Form $\ln\left(\frac{I}{I_{0}}\right)(n) = an+b$ bestimmt werden.
+
+\xtable{tb}{a4_tab}{Gemessene Peaks in Abhängigkeit der Anzahl der Schichten}{(Aufg. 4)}
+
+Die Messwerte sind in Tab. \ref{tab:a4_tab} aufgeführt.
+Die lineare Regression wird mit ``QtiPlot'' durchgeführt (s. Abb. \ref{fig:42}) und ergibt
+\begin{align}
+ a &= -0,54 \pm 0,04, \\
+ b &= -0,12 \pm 0,17.
+\end{align}
+Da für Aluminium gilt $\rho=\SI{2,7}{\gram\per\centi\metre\cubed}$ und $\mu=\SI{92,8}{\centi\metre\squared\per\gram}$ \cite{litmap}, ergibt sich für die Schichtdicke
+\begin{equation}
+ d = -\frac{a}{\sqrt{2}\mu\rho} = \SI{15,2\pm1,3}{\micro\metre}.
+\end{equation}
+In der Literatur findet sich für die Dicke von Aluminiumfolie $d\approx\SI{10}{\micro\metre}$ bis $\SI{15}{\micro\metre}$ \cite{wiki}. Dies ist in Übereinstimmung mit dem Ergebnis des Experiments.
+
+\begin{figure}[tb]
+ \centering
+ \includegraphics[scale=0.6]{./fig/a4_bild.png}
+ \caption{Schematische Skizze des Versuchsaufbaus (Quelle: \cite{litmap})}
+ \label{fig:41}
+\end{figure}
+
+\begin{figure}[tb]
+ \centering
+ \includegraphics[scale=0.6]{./fig/a4_plot.png}
+ \caption{Intensität der Röntgenstrahlung in Anhängigkeit der Schichtdicke}
+ \label{fig:42}
+\end{figure}
+
+\section{Qualitative Röntgenfluoreszenzanalyse an Legierungen}
+
+In diesem Versuch wird die Zusammensetzung von Legierungen bestimmt. Dazu werden die charakteristischen Linien der Legierung bestimmt und mit bekannten Linien verglichen. Für die Konzentration $C$ gilt
+\begin{equation}
+ C = \frac{I}{I_{el}},
+\end{equation}
+wobei $I_{el}$ die Intensität der Linie beim reinen Element ist. Es werden die Probe A (Lötzinn), Probe D (Konstantan), Probe E (Hartmetallfräser) und eine 5-Cent-Münze untersucht.
+
+\subsection{Probe A (Lötzinn)}
+
+Bei der Probe A handelt es sich um ein schneckenförmig zusammengerolltes Stück Draht aus Lötzinn. Die gemessenen Peaks sind in Tab. \ref{tab:a6_probe_a} aufgeführt. Die Peaks bei $a=263$ und $a=3354$ lassen sich nicht zuordnen, da für diese Kanalnummern keine charakteristischen Linien gemessen wurden.
+Bei den restlichen Linien handelt es sich vermutlich um Kupfer und die zwei Silber-Linien. Für Kupfer ergibt sich eine Konzentration von
+\begin{equation}
+ C = 2,9\%,
+\end{equation}
+und für Silber
+\begin{align}
+ C_{1} &= 10,4\%, \\
+ C_{2} &= 150,3\%.
+\end{align}
+Vermutlich handelt es sich beim zweiten Messwert um einen Messfehler, möglicherweise wurde die K$_{\beta1}$-Linie von Silber von einer anderen Linie überlagert. Daher wird nur der Wert der K$_{\alpha}$-Linie verwendet.
+Um die Zusammensetzung zu erhalten, werden die Werte noch auf $100\%$ skaliert. Vermutlich wurde nicht alle Röntgenstrahlung zur Erzeugung charakteristischer Linien verwendet, da die Probe Zwischenräume besaß.
+Es ergibt sich
+\begin{align}
+ C_{\textrm{Cu}} &= 22\%, \\
+ C_{\textrm{Ag}} &= 78\%.
+\end{align}
+
+Laut \cite{wiki_lot} befindet sich in Lötzinn hauptsächlich Blei, Zinn, Zink, Silber und Kupfer. Es ist also zu vermuten, dass die Hauptkomponenten des Lötzinns und deren Anteil einigermaßen genau bestimmt wurde.
+
+\xtable{htb}{a6_probe_a}{Gemessene Peaks für Probe A}{(Aufg. 6)}
+
+\subsection{Probe D (Konstantan)}
+
+Bei der Konstantan-Probe war nur eine Linie sichtbar. Diese besaß die folgenden Parameter:
+\begin{align}
+ a &= 611, \\
+ c &= 14805. 
+\end{align}
+Somit handelt es sich vermutlich um die Linie von Eisen. Die Konzentration beträgt
+\begin{equation}
+ C = 37,3\%. 
+\end{equation}
+Der Grund dafür, dass $C<100\%$ ist vermutlich, dass der Strahl auch neben der Probe auftraf, und somit nicht die gesamte Intensität verwendet wurde. Laut \cite{wiki_konst} besteht Konstantan zu $55\%$ aus Kupfer, zu $44\%$ aus Nickel und zu $1\%$ aus Mangan.
+Der Grund für die Abweichung könnte darin bestehen, dass der Probenhalter Eisen enthielt.
+
+\subsection{Probe E (Hartmetallfräser)}
+
+Die gemessenen Peaks für Probe E sind in Tab. \ref{tab:a6_probe_e} aufgeführt. Bei der Linie bei $a=685$ handelt es sich vermutlich um Eisen. Dessen Konzentration ergibt sich zu
+\begin{equation}
+ C_{\textrm{Fe}} = 7,3\%.
+\end{equation}
+Die restlichen Linien sind schwieriger zuzuordnen. Die Linie bei $a=858$ deutet auf Zink hin, vor allem da sich auch bei $1024$ eine Linie befindet, was zur K$_{\beta}$-Linie von Zink passen würde. Die Verhältnisse stimmen jedoch nicht überein. 
+Der Grund dafür ist möglicherweise, dass die Linie von der L$_{\alpha}$-Linie von Blei überlagert wird. Die Linie bei $1226$ könnte zur L$_{\beta}$-Linie von Blei passen. Werden die Linien Zn K$_{\alpha}$ und Pb L$_{\beta}$ zur Bestimmung der Konzentration verwendet, so ergibt sich
+\begin{align}
+ C_{\textrm{Zn}} &= 13,8\%, \\
+ C_{\textrm{Pb}} &= 11,7\%.
+\end{align}
+Werden die Konzentrationen auf $100\%$ skaliert, so ergibt sich
+\begin{align}
+ C_{\textrm{Fe}} &= 22\%, \\
+ C_{\textrm{Zn}} &= 42\%, \\
+ C_{\textrm{Pb}} &= 36\%.
+\end{align}
+Da die genaue Zusammensetzung solcher Hartmetallfräser je nach Hersteller und Modell variiert, gibt es hierzu keine Literaturwerte. Wir vermuten jedoch, dass sich in solchen Hartmetallen vorwiegend Titan und Wolfram befinden, was dem Ergebnis widerspricht.
+
+\xtable{htb}{a6_probe_e}{Gemessene Peaks für Probe E}{(Aufg. 6)}
+
+\subsection{5-Cent-Münze}
+
+Bei der 5-Cent-Münze war nur eine Linie sichtbar. Diese besaß die Parameter
+\begin{align}
+ a &= 819, \\
+ c &= 515176. \\
+\end{align}
+Es handelt sich dabei vermutlich um Kupfer. Die Konzentration beträgt
+\begin{equation}
+ C = 98,4\%.
+\end{equation}
+Laut \cite{wiki_5ct} bestehen 5-Cent-Münzen aus Eisen mit Kupferummantelung. Vermutlich konnte die Röntgenstrahlung nicht bis zum Eisenkern vordringen, weshalb nur das Kupfer gemessen wurde.
