@@ -1,0 +1,32 @@
+In diesem Versuch wird die optische Pinzette kennengelernt. Es handelt sich dabei um einen Laser, mit dessen Hilfe kleine Objekte wie Mikroorganismen bewegt werden können. Diese Technik wird beispielsweise bei der In-Vitro-Fertilisation angewandt.
+
+\section{Funktionsweise der optischen Pinzette}
+
+\subsection{Geometrische Optik}
+
+Im Rahmen der geometrischen Optik betrachtet man Licht als Strahlen, deren Welleneigenschaften vernachlässigt werden. Diese Näherung ist sinnvoll, solange die Dimensionen der Objekte mit denen das Licht wechselwirkt groß gegen die Wellenlänge sind.
+Ein Lichtstrahl besitzt dabei einen Impuls in Strahlrichtung, der proportional zur Intensität ist. Betrachte nun einen Lichtstrahl, der auf eine dielektrische Sphäre trifft \cite{Ashkin}: 
+Der Lichtstrahl wird gebrochen, und ändert somit seine Richtung. Dabei überträgt er einen Impuls auf die Kugel. Treffen nun zwei Lichtstrahlen  unterschiedlicher Intensität auf die Kugel (s. Abb. \ref{fig:geom_optik}), so zeigt die resultierende Kraft in Richtung des Lichtstrahls mit der höheren Intensität.
+Ein Laser besitzt ein gaussförmiges Intensitätsprofil, das in der Mitte ein Maximum besitzt. Trifft also ein Laserstrahl auf eine dielektrische Kugel, so wirkt eine rückstellende Kraft in Richtung der Strahlmitte. Die Kugel ist also ``gefangen''.
+
+\begin{figure}[h]
+	\centering\includegraphics[width=0.5\textwidth]{fig/geom_optik.png}
+	\caption{Skizze von Lichtstrahlen, die auf dielektrische Kugeln treffen \cite{Ashkin}}
+	\label{fig:geom_optik}
+\end{figure}
+
+\subsection{Wellenoptik}
+
+Ist die Größe des Objekts im Bereich der Wellenlänge des Lichts, so muss die maxwellsche Elektrodynamik zur Beschreibung des Phänomens verwendet werden. Das elektromagnetische Feld induziert im Objekt ein Dipolmoment $\vec{P}$. Die Wechselwirkungsenergie mit dem Feld ist dann gegeben durch
+\begin{equation}
+ V = -\vec{P}\cdot\vec{E}.
+\end{equation}
+Da gilt
+\begin{equation}
+ \vec{P} \propto \vec{E},
+\end{equation}
+folgt daraus mit $I\propto\vec{E}^{2}$
+\begin{equation}
+ V \propto -I.
+\end{equation}
+Das Potentialminimum befindet sich also an der Stelle der höchsten Intensität.
