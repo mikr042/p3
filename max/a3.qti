@@ -1,0 +1,162 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	4
+<table>
+Table1	30	2	12/5/17 2:05 PM
+geometry	0	0	445	220	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+<col nr="1">
+sqrt(col("2"))
+</col>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	26	2.529822128135
+1	28	2.733130073743
+2	29	2.835489375752
+3	30	2.937686164314
+4	47	4.698936049788
+</data>
+</table>
+<table>
+Linear1	5	2	12/5/17 2:47 PM
+geometry	1190	0	445	220	hidden
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel	Linear Regression of Table1_2	2
+<data>
+0	26	5.940413793103
+1	28	7.468275862069
+2	29	8.232206896552
+3	30	8.996137931034
+4	47	21.98296551724
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	12/5/17 2:53 PM
+geometry	445	0	513	467	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	495	398
+<PageGeometry>0.00990099	0.0121065	0.980198	0.96368</PageGeometry>
+PlotTitle	 	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<SyncScales>1</SyncScales>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+<ClipData>1</ClipData>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Kernladungszahl Z	√E		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	Sans Serif	9	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	Sans Serif	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#31363b	#31363b	#31363b	#31363b
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	29	1
+curve	Linear2_1	Linear2_2	0	1	#ff0000	0	1	0	0	#000000	#a0a0a4	0	#000000	14	0	2	0	0	4	1
+scale	0	2.5	5	0	6	5	0	0
+scale	1	2.5	5	0	6	5	0	0
+scale	2	25	50	0	6	5	0	0
+scale	3	25	50	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<table>
+Linear2	5	2	12/5/17 2:53 PM
+geometry	958	0	445	220	hidden
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel	Linear Regression of Table1_2	2
+<data>
+0	26	2.526514539854
+1	28	2.733347279351
+2	29	2.8367636491
+3	30	2.940180018849
+4	47	4.698258304579
+</data>
+</table>
+<open>1</open>
+<log>
+[12/5/17 2:47 PM	Plot: ''Graph1'']
+Linear Regression of dataset: Table1_2, using function: A*x+B
+Weighting Method: No weighting
+From x = 2.6000e+01 to x = 4.7000e+01
+B (y-intercept) = -1.3922e+01 +/- 6.9791e-01
+A (slope) = 7.6393e-01 +/- 2.1217e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1.3055e-01
+R^2 = 0.9977
+Adjusted R^2 = 0.9954
+RMSE (Root Mean Squared Error) = 0.3613
+RSS (Residual Sum of Squares) = 0.3916
+---------------------------------------------------------------------------------------
+[12/5/17 2:53 PM	Plot: ''Graph1'']
+Linear Regression of dataset: Table1_2, using function: A*x+B
+Weighting Method: No weighting
+From x = 2.6000e+01 to x = 4.7000e+01
+B (y-intercept) = -1.6231e-01 +/- 4.8980e-03
+A (slope) = 1.0342e-01 +/- 1.4890e-04
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6.4299e-06
+R^2 = 1
+Adjusted R^2 = 1
+RMSE (Root Mean Squared Error) = 0.002536
+RSS (Residual Sum of Squares) = 1.929e-05
+---------------------------------------------------------------------------------------
+</log>
