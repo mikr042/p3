@@ -24,7 +24,7 @@ WindowLabel		2
 </table>
 <table>
 Table2	29	2	05/12/2017 12:50
-geometry	445	0	445	220	active
+geometry	445	0	445	220	
 header	1[X]	2[Y]
 ColWidth	100	100	
 <com>
@@ -56,7 +56,7 @@ Alignement	0	0
 <graph>
 ggeometry	5	5	501	398
 <PageGeometry>0.00978474	0.0121065	0.980431	0.96368</PageGeometry>
-PlotTitle	Title	#000000	4228
+PlotTitle	 	#000000	4228
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
 <ScaleFonts>1</ScaleFonts>
@@ -67,7 +67,7 @@ Margin	0
 Border	0	#000000
 grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
 EnabledAxes	1	1	1	1	
-AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitles	Zählrate in 1/s	Δ<sub>FHWM</sub> in keV		 	
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	5124	5124	5124	5124
 AxesTitleDistance	2	2	2	2
@@ -109,7 +109,7 @@ EnabledTickLabels	1	1	1	1
 </multiLayer>
 <multiLayer>
 Graph2	1	1	05/12/2017 12:53
-geometry	0	220	519	459	
+geometry	290	92	519	459	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -120,7 +120,7 @@ Alignement	0	0
 <graph>
 ggeometry	5	5	501	398
 <PageGeometry>0.00978474	0.0121065	0.980431	0.96368</PageGeometry>
-PlotTitle	Title	#000000	4228
+PlotTitle	 	#000000	4228
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
 <ScaleFonts>1</ScaleFonts>
@@ -131,7 +131,7 @@ Margin	0
 Border	0	#000000
 grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
 EnabledAxes	1	1	1	1	
-AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitles	Zählrate in 1/s	E<sub>Kα</sub> in keV		 	
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	5124	5124	5124	5124
 AxesTitleDistance	2	2	2	2
