@@ -4547,7 +4547,7 @@ WindowLabel	/home/mikro/Documents/git/p3/massenspektrometer/messwerte/20170703_4
 </table>
 <multiLayer>
 Graph1	1	1	15/11/2017 15:04
-geometry	473	305	539	459	active
+geometry	470	202	539	459	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -4571,7 +4571,7 @@ Margin	0
 Border	0	#000000
 grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
 EnabledAxes	1	1	1	1	
-AxesTitles	Ionenmasse in u	Partialdruck in 10^{-10} mbar		 	
+AxesTitles	Ionenmasse in u	Partialdruck in 10<sup>-10</sup> mbar		 	
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	5124	5124	5124	5124
 AxesTitleDistance	2	2	2	2
@@ -4593,7 +4593,7 @@ curve	20170703_481725_Times	20170703_481725_VoltageV	0	1	#000000	0	1	7	0	#000000
 scale	0	-0.5	2.5	0	7	5	0	0
 scale	1	-0.5	2.5	0	7	5	0	0
 scale	2	25	30	0	6	5	0	0
-scale	3	0	50	0	6	5	0	0
+scale	3	25	30	0	2	30	0	0
 LabelsFormat	0	6	0	6	0	6	0	6
 AxisType	0	0	0	0	
 MajorTicks	1	1	1	1
@@ -4613,7 +4613,7 @@ EnabledTickLabels	1	1	1	1
 </multiLayer>
 <multiLayer>
 Graph2	1	1	15/11/2017 15:40
-geometry	1162	8	515	459	
+geometry	1162	8	515	459	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -4624,7 +4624,7 @@ Alignement	0	0
 <graph>
 ggeometry	5	5	497	398
 <PageGeometry>0.00986193	0.0123457	0.980276	0.982716</PageGeometry>
-PlotTitle	Restgasspektrum	#000000	4228
+PlotTitle	 	#000000	4228
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
 <SyncScales>0</SyncScales>
@@ -4637,7 +4637,7 @@ Margin	0
 Border	0	#000000
 grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
 EnabledAxes	1	1	1	1	
-AxesTitles	Ionenmasse in u	Partialdruck in 10^{-10} mbar		 	
+AxesTitles	Ionenmasse in u	Partialdruck in 10<sup>-10</sup> mbar		 	
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	5124	5124	5124	5124
 AxesTitleDistance	2	2	2	2
@@ -4657,9 +4657,9 @@ AxesBaseline	0	0	0	0
 CanvasBackground	#ffffff	0
 curve	20170703_483349_Times	20170703_483349_VoltageV	0	1	#000000	0	1	7	0	#000000	#000000	0	#000000	14	1	2	0	0	2173	1
 scale	0	-1	8	0	5	5	0	0
-scale	1	-4	8	0	7	5	0	0
+scale	1	-1	8	0	5	5	0	0
 scale	2	0	50	0	6	5	0	0
-scale	3	0	500	0	6	5	0	0
+scale	3	0	50	0	2	30	0	0
 LabelsFormat	0	6	0	6	0	6	0	6
 AxisType	0	0	0	0	
 MajorTicks	1	1	1	1
@@ -4680,8 +4680,8 @@ EnabledTickLabels	1	1	1	1
 <LineStyle>0</LineStyle>
 <x>-82.456140350877</x>
 <y>7.5986622073579</y>
-<right>147.69647696477</right>
-<bottom>6.36734693877551</bottom>
+<right>14.6112600536193</right>
+<bottom>6.80794701986755</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>

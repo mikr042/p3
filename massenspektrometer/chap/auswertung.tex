@@ -7,19 +7,19 @@ Bei den restlichen Peaks der schwereren Elemente handelt es sich um molekularen 
 
 \begin{figure}[h]
 	\centering\includegraphics[width=0.8\textwidth]{fig/untergrund_1}
-	\caption{Untergrundspektrum des Restgases}
+	\caption{Untergrundspektrum des Restgases (Offset nicht korrigiert)}
 	\label{fig:untergrund_1}
 \end{figure}
 
 Zur Bestimmung des Auflösungsvermögens wird, wie in der Vorbereitung beschrieben, die z\%-Linienbreite Definition verwendet, wobei z=20 gewählt wurde.\\
 Dafür wurde noch einmal mit höherer Abtastrate die Massenbereiche 1-5\;u und 25-30\;u gemessen.\\
-Wie erwartet steigt das Auflösungsvermögen mit steigendem m. Dies liegt daran, dass die Linienbreite $\Delta m$ bei unterschiedlichen Massenzahlen hinreichend konstant ist, zumindest immer <1, wobei die Massenzahl monoton steigt.\\
+Wie erwartet steigt das Auflösungsvermögen mit steigendem m, wie in Tabelle \ref{tab:a1_m} angegeben. Dies liegt daran, dass die Linienbreite $\Delta m$ bei unterschiedlichen Massenzahlen näherungsweise konstant $\leq$ 1 ist, wobei die Massenzahl monoton steigt.\\
 \begin{figure}[h]
 	\centering\includegraphics[width=0.8\textwidth]{fig/aufloesung}
-	\caption{Genaue Aufnahme im Bereich von 25-30 u}
+	\caption{Aufnahme im Bereich von 25-30 u (Offset nicht korrigiert)}
 	\label{fig:aufloesung}
 \end{figure}
-Die Werte für m = 28\;u wurden Abb. \ref{fig:aufloesung} entnommen, der Rest dem großen Untergrundspektrum.
+Die Werte für m = 28\;u wurden Abb. \ref{fig:aufloesung} entnommen, der Rest dem großen Untergrundspektrum. Möglicherweise ist die Linienbreite $\Delta m$ daher kleiner als bei $m =$ \{2, 18\}\;u.
 \begin{table}
 	\centering
 	\caption{Auflösungsvermögen bei unterschiedlichen Massenzahlen}
@@ -32,14 +32,15 @@ Die Werte für m = 28\;u wurden Abb. \ref{fig:aufloesung} entnommen, der Rest de
 		28&0.89&31.46\\
 		\bottomrule
 	\end{tabular}
+	\label{tab:a1_m}
 \end{table}
 
 \section{Auftrittsenergie von Argon}
 \label{sec:argon}
 
-Um die Auftrittsenergie von Argon zu bestimmen, wurde die Vakuumkammer bis zu einem Druck von $4\cdot 10^{-6}$\;mbar mit Argon befüllt.
-Anschließend wurde das Massenspektrometer auf m = 40\;u und m = 20\;u zur Detektierung von respektive Ar$^{+}$ und Ar$^{++}$-Ionen eingestellt.\\
-Die Beschleunigungsspannung und damit Energie der stoßenden Elektronen konnte über einen Drehregler direkt gesteuert werden, wobei darauf geachtet unter einer Energie von 100\;eV zu bleiben.
+Um die Auftrittsenergie von Argon zu bestimmen, wurde die Vakuumkammer durch konstanten Durchfluss von Argon auf einem dynamischen Druck von $4\cdot 10^{-6}$\;mbar gehalten.
+Anschließend wurde das Massenspektrometer auf m = 40\;u bzw. m = 20\;u zur Detektierung von Ar$^{+}$ respektive Ar$^{++}$-Ionen eingestellt.\\
+Die Beschleunigungsspannung und damit Energie der stoßenden Elektronen konnte direkt gesteuert werden, wobei eine Energie von 100\;eV nicht überschritten wurde.
 Auf diese Weise wurde der Partialdruck der Argonionen in Abhängigkeit der Elektronenenergie gemessen.
 
 \begin{figure}[h]
@@ -50,7 +51,7 @@ Auf diese Weise wurde der Partialdruck der Argonionen in Abhängigkeit der Elekt
 	\label{fig:plot_argon}
 \end{figure}
 
-Wie erwartet nimmt der Partialdruck erst linear zu wodurch man mit einer Regression in diesem Bereich die Auftrittsenergie bestimmen kann.
+Wie erwartet nimmt der Partialdruck bei kleiner Energie linear zu wodurch man mit einer Regression in diesem Bereich die Auftrittsenergie bestimmen kann.
 \begin{equation}
 	p(E) = m\cdot E + c
 \end{equation}
@@ -70,7 +71,7 @@ Mittels Gaußscher Fehlerfortpflanzung (Gl. \ref{eq:gauss}) ergibt sich für die
 	E_{a,Ar++} &= \SI{49,67\pm 0,25}{\electronvolt}
 \end{align}
 Vergleicht man die gemessenen Werte mit den Literaturwerten (E$_{a,Ar+}$ = 15,76\;eV, E$_{a,Ar++}$ = 43,39\;eV, \cite{Litmap}) so ergibt sich eine Abweichung von 15,2\;\% für einfach, bzw 14,5\;\% für zweifach ionisiertes Argon.\\
-In beiden Fällen liegt der Literaturwert außerhalb der Fehlergrenzen und die Werte sind deutlich höher als erwartet. Dies könnte an nicht beachteten systematische Fehlern liegen, oder an der Durchführung des Versuchs, da die Beschleunigungsspannung per Hand geregelt werden musste und somit nicht wirklich linear anstieg.\\
+In beiden Fällen liegt der Literaturwert außerhalb der Fehlergrenzen und die Werte sind deutlich höher als erwartet. Dies könnte an nicht beachteten systematische Fehlern liegen, da die relative Abweichung der beiden Messwerte vom Literaturwert fast gleich ist.\\
 \begin{equation}
 	\Delta E_a = \sqrt{\left(\frac{\partial E_a}{\partial c}\cdot\Delta c\right)^2 + \left(\frac{\partial E_a}{\partial m}\cdot\Delta m\right)^2}
 	\label{eq:gauss}
@@ -78,7 +79,7 @@ In beiden Fällen liegt der Literaturwert außerhalb der Fehlergrenzen und die W
 
 \section{Dissoziationsenergie von Stickstoff}
 
-Wie in der Vorbereitung beschrieben (\ref{sec:v3}) müssen als Erstes die Auftrittsenergien von N$^+$ und N$_2^+$ bestimmt werden. Dabei wird analog zum vorherigen Versuch verfahren (\ref{sec:argon}).\\
+Wie in der Vorbereitung beschrieben (\ref{sec:v3}) werden als Erstes die Auftrittsenergien von N$^+$ und N$_2^+$ bestimmt. Dabei wird analog zum vorherigen Versuch verfahren (\ref{sec:argon}).\\
 \begin{figure}[h]
 	\centering
 	\subfigure[]{\includegraphics[width=0.49\textwidth]{fig/n+}}
