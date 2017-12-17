@@ -1,19 +1,19 @@
-Dieser Versuch beschäftigt sich mit der Massenspektrometrie. Die Massenspektrometrie beschäftigt sich mit der Trennung gasförmiger Substanzen nach den Massen ihrer Bestandteile. Dazu werden die Bestandteile ionisiert. Die Massenspektrometrie besitzt vielfältige Anwendungen z. B. in der Chemie zur quantitativen und qualitativen Analyse von Substanzen, oder auch in der Industrie.
+Die Massenspektrometrie besitzt vielfältige Anwendungen z. B. in der Chemie zur quantitativen und qualitativen Analyse von Substanzen, oder auch in der Industrie.
 In diesem Versuch werden unter anderem die Auftrittsenergie von Argon und die Dissoziationsenergien von Stickstoff bestimmt, sowie eine quantitative und qualitative Analyse durchgeführt.
 
-\section{Pumpsysteme}
-
-In diesem Versuch werden zwei unterschiedliche Pumpen verwendet, um das Vakuum zu erzeugen. Zunächst wird mittels einer Drehschieberpumpe ein Vorvakuum ($p\approx\SI{3e-2}{\milli\bar}$) erzeugt. Schließlich wird eine Turbomolekularpumpe verwendet, um ein Hochvakuum ($p\approx\SI{e-7}{\milli\bar}$) zu erreichen.
+\section{Vakuumpumpsysteme}
+Um das Massenspektrometer betreiben zu können, muss die mittlere freie Weglänge der Gasmoleküle größer als die Länge des Spektrometers sein. Um die erforderlichen niedrigen Drücke zu erreichen, werden in diesem Versuch zwei unterschiedliche Pumpen verwendet.
+Zunächst wird mittels einer Drehschieberpumpe ein Vorvakuum ($p\approx\SI{3e-2}{\milli\bar}$) erzeugt. Schließlich wird eine Turbomolekularpumpe verwendet, um ein Hochvakuum ($p\approx\SI{e-7}{\milli\bar}$) zu erreichen.
 
 \subsection{Drehschieberpumpe}
 
 Eine Drehschieberpumpe (siehe Abb. \ref{fig011}) besteht aus einem Rotor, an dem Federn angebracht sind. Zu Beginn des Pumpvorgangs tritt das Gas in den Schöpfraum ein. Es wird dann von der Feder, die durch die Federkraft oder durch die Zentrifugalkraft an die Wand gepresst wird, mitgenommen und verdichtet.
-Die Pumpwirkung kommt dadurch zustande, dass beim Drehen des Rotors das Volumen des Schöpfraums erhöht wird.
+Die Pumpwirkung kommt dadurch zustande, dass beim Ansaugvorgang das Schöpfvolumen erhöht wird.
 
 \begin{figure}[tb]
  \centering
  \includegraphics[scale=0.7]{./fig/massenspek_drehschieber.png}
- \caption{Skizze einer Drehschieberpumpe (Quelle: \cite[S. 7]{Litmap})}
+ \caption{Skizze einer Drehschieberpumpe in verschiedenen Zuständen des Pumpvorgangs. Links: Abtrennen des Schöfvolumens. Mitte: Ausstoßen des Gases. Rechts: Ansaugvorgang (Quelle: \cite[S. 7]{Litmap})}
  \label{fig011}
 \end{figure}
 
@@ -25,7 +25,7 @@ Oft sind Turbomolekularpumpen auch aus mehreren hintereinander geschalteten Pump
 
 \section{Quadrupol-Massenspektrometer}
 
-In diesem Versuch wird ein Quadrupol-Massenspektrometer (s. Abb. \ref{fig021}) verwendet. Es besteht aus vier hyperbelförmigen Elektroden. Diese erzeugen eine Überlagerung aus einem Gleichfeld $\phi_{1}=U$ und einem Wechselfeld $\phi_{2}=V\cos(\omega t)$.
+In diesem Versuch wird ein Quadrupol-Massenspektrometer (s. Abb. \ref{fig021}) verwendet. Es besteht aus vier hyperbelförmigen Elektroden. Diese erzeugen eine Überlagerung aus einem Gleichfeld $\phi_{1}=U$, das zwischen zwei der Elektroden erzeugt wird, und einem Wechselfeld $\phi_{2}=V\cos(\omega t)$ zwischen den anderen beiden Elektroden.
 Die Ionen werden so zwischen den Elektroden auf eine Wellenbahn gezwungen. Das Verhältnis $\frac{U}{V}$ lässt sich so einstellen, dass nur Ionen, die ein bestimmtes Verhältnis $\frac{m}{q}$ der Masse $m$ zur Ladung $q$ besitzen, die Elektroden passieren. Ionen einer anderen Masse stoßen an die Elektroden, und können den Filter nicht passieren.
 
 \begin{figure}[tb]
@@ -37,7 +37,7 @@ Die Ionen werden so zwischen den Elektroden auf eine Wellenbahn gezwungen. Das V
 
 \section{Ionisationsvakuummeter}
 
-Ein Ionisationsvakuummeter ist ein Messgerät, dass zur Messung niedriger Drücke (im Bereich $1$ bis $\SI{e-11}{\milli\bar}$) eingesetzt wird. Zur Messung des Druckes wird mittels einer Glühkathode ein Elektronenstrom erzeugt. Dieser wird über eine Strecke $\Delta l$ durch das Gas zu einem Ionenfänger geleitet.
+Ein Ionisationsvakuummeter ist ein Messgerät, dass zur Messung niedriger Drücke (im Bereich $10^{-2}$ bis $\SI{e-11}{\milli\bar}$) eingesetzt wird. Zur Messung des Druckes wird mittels einer Glühkathode ein Elektronenstrom erzeugt. Dieser wird über eine Strecke $\Delta l$ durch das Gas zu einem Ionenfänger geleitet.
 Die Elektronen stoßen dabei mit den Gasteilchen zusammen und ionisieren diese. Für den dadurch auftretenden Ionenstrom $I^{+}$ gilt
 \begin{equation}
  I^{+} = I^{-}S\Delta l,
@@ -47,14 +47,14 @@ Für den Zusammenhang von $I^{+}$ mit dem Gasdruck $p$ ergibt sich
 \begin{equation}
  I^{+} = \varepsilon I^{-}p,
 \end{equation}
-mit der Vakuummeterkonstante $\varepsilon$, die von der Geometrie des Messgeräts abhängt.
+mit einer Konstanten $\varepsilon$, die von der Geometrie des Messgeräts abhängt.
 
 \section{Ionenquellen}
 
 Zur Untersuchung der Moleküle ist es notwendig, diese zu ionisieren. Dies kann mit Hilfe folgender Methoden erreicht werden.
 \begin{itemize}
  \item Stoßionisation: Diese Methode wird im Versuch verwendet. Hierbei werden die Gasmoleküle mit Elektronen beschossen. Beim Stoß der Elektronen mit den Gasmolekülen kann es zur Ionisation kommen.
- Außerdem kann es zur Dissoziation eines Moleküls kommen. Dies ist wahrscheinlicher, falls sich das Molekül in einem hochangeregten Schwingungszustand befindet.
+ Außerdem kann es zur Dissoziation eines Moleküls kommen, falls die kinetische Energie der Elektronen ausreicht.
  \item Thermische Oberflächenionisation: Von einer heißen Metalloberfläche dampfen adsorbierte Moleküle mit hoher Wahrscheinlichkeit als Ionen ab.
  \item Feldionisation: Hierbei werden die Moleküle in ein stark inhomogenes elektrisches Feld gebracht. Durch den quantenmechanischen Tunneleffekt kann es dabei zur Ionisation kommen.
 \end{itemize}

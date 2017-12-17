@@ -106,7 +106,7 @@ Vergleicht man die gemessenen Werte mit den Literaturwerte (E$_\textrm{D}$(N$_2^
 ergibt sich eine Abweichung von 22,1\% für neutrales, bzw 1,6\% für einfach ionisierten molekularen Stickstoff.\\
 Das Ergebnis für einfach ionisierten Stickstoff ist also sehr gut, obwohl der Messwert für neutralen Stickstoff relativ weit abweicht. Dies kann an einem nicht beachteten systematischen Fehler liegen, der bei beiden Messungen in die gleiche Richtung verfälscht. Dies würde erklären, warum die Differenz zweier Messwerte ein gutes Ergebnis liefert, wenn aber ein Literaturwert abgezogen wird, eine recht große Abweichung nach oben zu sehen ist.\\
 
-\section{Versuch 4: Quantitative Analyse der Raumluft}
+\section{Quantitative Analyse der Raumluft}
 
 In diesem Versuch wird die Zusammensetzung der Luft bestimmt. Dazu wird Luft bis zu einem Druck von $p=\SI{3,7e-6}{\milli\bar}$ in den Rezipienten geleitet. Dann werden zwei Massenspektren aufgenommen. Aus der Höhe der Peaks lässt sich der Partialdruck des entsprechenden Gases bestimmen. Es gilt nämlich
 \begin{equation}
@@ -125,7 +125,7 @@ Bei den Linien, die in beiden Spektren zu sehen sind, wird für die Auswertung d
 
 \begin{figure}[tb]
 	\centering\includegraphics[width=0.9\textwidth]{fig/a4_2.png}
-	\caption{Massenspektrum der Luft (Messbereich: $\SI{e-8}{\milli\bar}$)}
+	\caption{Massenspektrum der Luft (Messbereich: $\SI{e-8}{\milli\bar}$). Die Linie bei $m=\SI{28}{\amu}$ ist abgeschnitten.}
 	\label{fig:v42}
 \end{figure}
 
@@ -183,7 +183,7 @@ Es ergibt sich wie erwartet, dass der Partialdruck mit steigendem Emissionsstrom
 	\label{fig:v43}
 \end{figure}
 
-\section{Versuch 5: Qualitative Analyse}
+\section{Qualitative Analyse eines unbekannten Gases}
 
 In diesem Versuch wird das Massenspektrum eines unbekannten Gases bei den Energien $15, \, 30$ und $\SI{60}{\electronvolt}$ aufgenommen. Wie erwartet zeigen die Spektren bei $30$ und $\SI{60}{\electronvolt}$ (s. Abb. \ref{fig:v52} und \ref{fig:v53}) deutlich mehr Linien, als das Spektrum bei $\SI{15}{\electronvolt}$ (s. Abb. \ref{fig:v51}).
 In diesem sind nur die Linien bei $28, \, 29, \, 44$ und $\SI{45}{\amu}$ deutlich zu erkennen. Im folgenden wird zur Ermittlung des unbekannten Gases das Spektrum bei $\SI{60}{\electronvolt}$ verwendet (s. Tab. \ref{tab:v5}).
@@ -214,35 +214,35 @@ Möglicherweise sind der Grund dafür Verunreinigungen, oder es kam bei Kollisio
 \end{table}
 
 
-\begin{figure}[tb]
+\begin{figure}[h!]
 	\centering\includegraphics[width=1.1\textwidth]{fig/a5_15ev.png}
-	\caption{Gemessenes Spektrum bei $E=\SI{15}{\electronvolt}$}
+	\caption{Gemessenes Spektrum des unbekannten Gases bei $E=\SI{15}{\electronvolt}$}
 	\label{fig:v51}
 \end{figure}
 
-\begin{figure}[tb]
+\begin{figure}[h!]
 	\centering\includegraphics[width=1.1\textwidth]{fig/a5_30ev.png}
-	\caption{Gemessenes Spektrum bei $E=\SI{30}{\electronvolt}$}
+	\caption{Gemessenes Spektrum des unbekannten Gases bei $E=\SI{30}{\electronvolt}$}
 	\label{fig:v52}
 \end{figure}
 
-\begin{figure}[tb]
+\begin{figure}[h!]
 	\centering\includegraphics[width=1.1\textwidth]{fig/a5_60ev.png}
-	\caption{Gemessenes Spektrum bei $E=\SI{60}{\electronvolt}$}
+	\caption{Gemessenes Spektrum des unbekannten Gases bei $E=\SI{60}{\electronvolt}$}
 	\label{fig:v53}
 \end{figure}
 
-\begin{figure}[tb]
+\begin{figure}[h!]
 	\centering\includegraphics[width=0.9\textwidth]{fig/propan.png}
-	\caption{Massenspektrum von Propan (Quelle: \cite{Nist})}
+	\caption{Referenz-Massenspektrum von Propan (Quelle: \cite{Nist})}
 	\label{fig:v54}
 \end{figure}
 
-\section{Versuch 6: Zersetzungsenthalpie}
+\section{Zersetzungsenthalpie}
 
 In diesem Versuch wird die Zersetzungsenthalpie $\Delta H$ von kohlesaurem Kalk (CaCO$_{3}$) zu CO$_{2}$ mit Hilfe der Massenspektrometrie bestimmt.
 Erhitzt man kohlesauren Kalk, so bildet sich gasförmiges Kohlenstoffdioxid. Mit dem Massenspektrometer kann der Partialdruck des CO$_{2}$ gemessen werden. Da die Turbomolekularpumpe den Inhalt des Rezipienten fortlaufend abpumpt, kann die Reaktionsrate $k$ bis auf einen konstanten Faktor mit dem Partialdruck identifiziert werden.
-Für die Reaktionsrate gilt die Arrhenius-Gleichung (\cite{wiki})
+Für die Reaktionsrate gilt die Arrhenius-Gleichung (\cite{wiki:arrh})
 \begin{equation}
  k = A \exp\left(-\frac{\Delta H}{RT} \right),
 \end{equation}
@@ -256,7 +256,7 @@ Im Versuch wurde die Temperatur mit einem Thermoelement gemessen. Dessen Spannun
 \begin{equation}
  T(V) = \SI{17,8571}{\kelvin\per\milli\volt} \cdot V + \SI{274,286}{\kelvin}.
 \end{equation}
-Für die lineare Regression wurden nur die Messwerte (s. Abb. \ref{fig:v61} ) mit $T\geq\SI{575}{\kelvin}$ verwendet, da die Zersetzungsrate für kleine Temperaturen zu gering ist. Die lineare Regression (\ref{fig:v62}) der Form $\ln\left(\frac{p}{p_{0}}\right)\left(\frac{1}{T}\right) = \frac{a}{T} + b$ wird mit ``Qtiplot'' durchgeführt und ergibt
+Für die lineare Regression wurden nur die Messwerte mit $T\geq\SI{575}{\kelvin}$ verwendet, da die Zersetzungsrate für kleine Temperaturen zu gering ist. Die lineare Regression (\ref{fig:v62}) der Form $\ln\left(\frac{p}{p_{0}}\right)\left(\frac{1}{T}\right) = \frac{a}{T} + b$ wird mit ``Qtiplot'' durchgeführt und ergibt
 \begin{align}
  a &= -\SI{14150\pm150}{\kelvin}, \\
  b &= 24,4 \pm 0,2,
@@ -270,7 +270,7 @@ mit einer statistischen Unsicherheit von
  \sigma_{\Delta H} = \SI{1}{\kilo\joule\per\mol}.
 \end{equation}
 
-Die systematische Unsicherheit ergibt sich folgendermaßen: Aus der systematischen Unsicherheit auf die Spannung des Thermoelements $\Delta V=\SI{0,05}{\milli\volt}$ (abgeschätzt) ergibt sich per Fehlerfortpflanzung
+Die systematische Unsicherheit ergibt sich aus der systematischen Unsicherheit der Spannung des Thermoelements $\Delta V=\SI{0,05}{\milli\volt}$ (abgeschätzt) per Fehlerfortpflanzung
 \begin{equation}
  \Delta T = \left| \frac{\partial T}{\partial V}\right| = \SI{17,8571}{\kelvin\per\milli\volt} \Delta V = \SI{0,89}{\kelvin}.
 \end{equation}
@@ -283,23 +283,16 @@ Also ergibt sich insgesamt
  \Delta H = (117,6\pm1,2\pm0,2)\si{\kilo\joule\per\mole},
 \end{equation}
 wobei exemplarisch die Werte $T=\SI{625}{\kelvin}$ und $p=\SI{4e-8}{\milli\bar}$ verwendet wurden.
-Der Literaturwert beträgt (bei $T=\SI{298}{\kelvin}$) \cite{chem}
+Der Literaturwert beträgt (bei $T=\SI{298}{\kelvin}$ und $p=\SI{1013}{\hecto\pascal}$ (Standardbedingungen)) \cite{chem}
 \begin{equation}
  \Delta H = \SI{178,4}{\kilo\joule\per\mole}.
 \end{equation}
-Die Abweichung vom Literaturwert beträgt also ca. $34\%$ und liegt außerhalb der berechneten Fehlergrenzen. Der Literaturwert ist jedoch für $T=\SI{298}{\kelvin}$ gültig, und das Experiment wurde bei deutlich höherer Temperatur durchgeführt, was die Abweichung erklären könnte.
+Die Abweichung vom Literaturwert beträgt also ca. $34\%$ und liegt außerhalb der berechneten Fehlergrenzen. Der Literaturwert ist jedoch für Standardbedingungen gültig, und das Experiment wurde bei deutlich höherer Temperatur und deutlich niedrigerem Druck durchgeführt, was die Abweichung erklären könnte.
 
-
-
-\begin{figure}[tb]
-	\centering\includegraphics[width=0.9\textwidth]{fig/massen_a6_1.png}
-	\caption{Messwerte für den Partialdruck $p$ in Abhängigkeit von der Temperatur $T$}
-	\label{fig:v61}
-\end{figure}
 
 \begin{figure}[tb]
 	\centering\includegraphics[width=0.9\textwidth]{fig/massen_a6_reg.pdf}
-	\caption{Lineare Regression von $\ln\left(\frac{p}{p_{0}}\right)$ nach $\frac{1}{T}$}
+	\caption{Messwerte für den Partialdruck $p$ von CO$_{2}$ aus der Zersetzung von CaCO$_{3}$. Lineare Regresseion zur Bestimmung der Zersetzungsenthalpie $H$.}
 	\label{fig:v62}
 \end{figure}
 
