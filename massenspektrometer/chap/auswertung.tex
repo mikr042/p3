@@ -108,11 +108,17 @@ Das Ergebnis für einfach ionisierten Stickstoff ist also sehr gut, obwohl der M
 
 \section{Quantitative Analyse der Raumluft}
 
-In diesem Versuch wird die Zusammensetzung der Luft bestimmt. Dazu wird Luft bis zu einem Druck von $p=\SI{3,7e-6}{\milli\bar}$ in den Rezipienten geleitet. Dann werden zwei Massenspektren aufgenommen. Aus der Höhe der Peaks lässt sich der Partialdruck des entsprechenden Gases bestimmen. Es gilt nämlich
+Mit Hilfe der Massenspektrometrie kann eine quantitative Analyse eines Gasgemischs durchgeführt werden. Das Massenspektrometer trennt die Bestandteile des Gases, die dieselbe spezifische Ladung $\frac{q}{m}$ besitzen. Der detektierte Ionenstrom ist dann proportional zum Partialdruck des jeweiligen Bestandteils. Da die Massenspektren sich außerdem additiv überlagern, kann von der Höhe des Ionenstroms auf den relativen Anteil der einzelnen Moleküle geschlossen werden.
+Es gilt nämlich
 \begin{equation}
  h = sp,
 \end{equation}
-mit der Peakhöhe $h$, der Sensitivität $s$ und dem Partialdruck des Gases $p$. Insgesamt lässt sich so der Anteil der verschiedenen Gase an der Luft bestimmen.
+mit der Peakhöhe $h$, der Sensitivität $s$ und dem Partialdruck des Gases $p$.
+
+In diesem Versuch wird die Zusammensetzung der Luft bestimmt.
+Als erstes wird für eventuell nötige Korrekturen ein Untergrundspektrum für m = 14 u und m = 28 u aufgenommen.
+Danach wird Raumluft bis $3,7\cdot10^{-6} \si{\bar}$ in die Kammer eingelassen und erneut ein Massenspektrum aufgenommen, woraus die Partialdrücke der einzelnen Moleküle bestimmt werden können.\\
+Summiert man die Partialdrücke auf wird der Gesamtdruck vermutlich niedriger als der gemessene Druck in der Ionisationskammer sein, da nur ein Bruchteil der Moleküle tatsächlich ionisiert wird und am Detektor erfasst werden kann.
 
 Zunächst wird ein Spektrum bei einem Messbereich von $\SI{e-7}{\milli\bar}$ aufgenommen (s. Abb. \ref{fig:v41}), um die Linie bei $\SI{28}{\amu}$, die deutlich höher als die anderen Linien ist, zu vermessen. Dann wird ein Spektrum bei $\SI{e-8}{\milli\bar}$ aufgenommen (s. Abb. \ref{fig:v42}), um auch die Höhe der niedrigeren Linien zu bestimmen.
 Bei den Linien, die in beiden Spektren zu sehen sind, wird für die Auswertung der Mittelwert verwendet.
@@ -185,7 +191,12 @@ Es ergibt sich wie erwartet, dass der Partialdruck mit steigendem Emissionsstrom
 
 \section{Qualitative Analyse eines unbekannten Gases}
 
-In diesem Versuch wird das Massenspektrum eines unbekannten Gases bei den Energien $15, \, 30$ und $\SI{60}{\electronvolt}$ aufgenommen. Wie erwartet zeigen die Spektren bei $30$ und $\SI{60}{\electronvolt}$ (s. Abb. \ref{fig:v52} und \ref{fig:v53}) deutlich mehr Linien, als das Spektrum bei $\SI{15}{\electronvolt}$ (s. Abb. \ref{fig:v51}).
+Für die qualitative Analyse wird ein unbekanntes Kohlenwasserstoffmolekül in die Ionisationskammer eingelassen und bei $E$ = {15, 30, 65}\;eV jeweils ein Massenspektrum aufgenommen.
+Das große Molekül dissoziiert dabei in kleinere ionisierte Bruchstücke, die bestimmt werden sollen.\\
+Es wird erwartet, dass die Anzahl der Bruchstücke mit steigender Energie zunimmt, da bei höheren kinetischen Energien der stoßenden Elektronen mehr Energie auf die Molekülbindungen übertragen wird. 
+Übersteigt diese Energie die benötigte Dissoziationsenergie dieser Bindung zerbricht das Molekül in kleinere ionisierte Bruchstücke.
+
+Wie erwartet zeigen die Spektren bei $30$ und $\SI{60}{\electronvolt}$ (s. Abb. \ref{fig:v52} und \ref{fig:v53}) deutlich mehr Linien, als das Spektrum bei $\SI{15}{\electronvolt}$ (s. Abb. \ref{fig:v51}).
 In diesem sind nur die Linien bei $28, \, 29, \, 44$ und $\SI{45}{\amu}$ deutlich zu erkennen. Im folgenden wird zur Ermittlung des unbekannten Gases das Spektrum bei $\SI{60}{\electronvolt}$ verwendet (s. Tab. \ref{tab:v5}).
 
 Am deutlichsten im Spektrum zu sehen sind zum Einen die vier Linien bei $26, \, 27, \, 28$ und $\SI{29}{\amu}$. Die Linie $29$ gehört dabei zum Bruchstück $\textrm{C}_{2}\textrm{H}_{5}$ (und die anderen Linien entsprechend zu $\textrm{C}_{2}\textrm{H}_{4}$, etc.).
@@ -214,25 +225,25 @@ Möglicherweise sind der Grund dafür Verunreinigungen, oder es kam bei Kollisio
 \end{table}
 
 
-\begin{figure}[h!]
+\begin{figure}[ph]
 	\centering\includegraphics[width=1.1\textwidth]{fig/a5_15ev.png}
 	\caption{Gemessenes Spektrum des unbekannten Gases bei $E=\SI{15}{\electronvolt}$}
 	\label{fig:v51}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ph]
 	\centering\includegraphics[width=1.1\textwidth]{fig/a5_30ev.png}
 	\caption{Gemessenes Spektrum des unbekannten Gases bei $E=\SI{30}{\electronvolt}$}
 	\label{fig:v52}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ph]
 	\centering\includegraphics[width=1.1\textwidth]{fig/a5_60ev.png}
 	\caption{Gemessenes Spektrum des unbekannten Gases bei $E=\SI{60}{\electronvolt}$}
 	\label{fig:v53}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ph]
 	\centering\includegraphics[width=0.9\textwidth]{fig/propan.png}
 	\caption{Referenz-Massenspektrum von Propan (Quelle: \cite{Nist})}
 	\label{fig:v54}
