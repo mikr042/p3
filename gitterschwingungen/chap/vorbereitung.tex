@@ -1,0 +1,48 @@
+\section{Kristallstruktur}
+
+Kristalle zeichnen sich dadurch aus, dass sie im Raum periodisch sind. Man beschreibt sie durch ein Raumgitter und eine Basis. Ein Gittervektor hat die Form
+\begin{equation}
+ \vec{R} = \sum_{1}^{3} n_{i}\vec{a}_{i}, \qquad n_{i}\in \mathbb{Z},
+\end{equation}
+wobei die $\vec{a}_{i}$ die primitive Einheitszelle des Raumgitters aufspannen.
+
+Man definiert das reziproke Gitter durch die primitiven Einheitsvektoren
+\begin{equation}
+ \vec{A}_{1} = \frac{2\pi}{V} \vec{a}_{2}\times\vec{a}_{3},
+\end{equation}
+und zyklisch, wobei $V=\vec{a}_{1}\cdot\left(\vec{a}_{2}\times\vec{a}_{3}\right)$ das Volumen der primitiven Einheitszelle des Raumgitters ist. Die $1.$ Brillouin-Zone wird definiert als die Wigner-Seitz-Zelle des reziproken Gitters. Die Wigner-Seitz-Zelle ist eine besondere primitive Einheitszelle, die sich für jedes Gitter eindeutig konstruieren lässt.
+
+In einem eindimensionalen Gitter mit Gitterkonstante $a$ ist die $1.$ Brillouin-Zone gerade das Intervall $-\frac{\pi}{a}\leq k \leq \frac{\pi}{a}$.
+
+\section{Gitterschwingungen: eindimensionales Modell}
+
+In einem Kristall können die Atome zu gekoppelten Schwingungen um ihre Gleichgewichtslage angeregt werden. Die Quanten dieser Schwingungen heißen Phononen. Zur Beschreibung der Schwingungen kann ein eindimensionales Modell mit folgenden Näherungen verwendet werden:
+\begin{itemize}
+  \item Nächste-Nachbarn-Näherung: Es wird angenommen, dass ein Atom jeweils nur mit den nächsten Nachbarn wechselwirkt, da das Paarpotenzial zum übernächsten Atom sehr weit abgefallen ist.
+  \item Punktmassennäherung: Die Atome werden durch Punktmassen genähert.
+  \item Harmonische Näherung: Es werden kleine Auslenkungen der Atome aus ihrer Gleichgewichtslage $x_{0}$ angenommen. Dann kann das Paarpotenzial in eine Taylorreihe entwickelt werden:
+      \begin{equation}
+       V(x) \approx V(x_{0}) +\frac{1}{2} \frac{\d^{2}V}{\d x^{2}}\rvert_{x=x_{0}} \left(x-x_{0}\right)^{2}, 
+      \end{equation}
+      Dieses Potential kann also durch Federn mit linearer Rückstellkraft simuliert werden. Es gilt dann für die Federkonstante $D$
+      \begin{equation}
+       D = \frac{\d^{2}V}{\d x^{2}}|_{x=x_{0}}.
+      \end{equation}
+\end{itemize}
+Insgesamt werden die Gitterschwingungen also durch die Schwingungen von mit Federn gekoppelten Punktmassen beschrieben.
+
+\section{Einatomige Kette}
+
+Betrachte nun Punktmassen der Masse $m$, die mit Federn mit Federkonstante $D$ verbunden sind. Der Gleichgewichtsabstand sei $a$. Die Auslenkung der $j$-ten Punktmasse sei $s_{j}$. Die Bewegungsgleichung für $s_{j}$ lautet dann
+\begin{equation}
+  m\ddots{s}_{j} = D\left( s_{j+1} + s_{j-1} -2s_{j} \right).
+\end{equation}
+Der Ansatz
+\begin{equation}
+ s_{j}(t) = A \e^{i(kj-\omega t)},
+\end{equation}
+führt auf die Dispersionsrelation
+\begin{equation}
+ \omega(k) = \sqrt{\frac{4D}{m}} \left|\sin\left(\frac{ka}{2}\right)\right|.
+\end{equation}
+Es ist zu erkennen, dass die Dispersionsrelation periodisch von $k$ abhängt, mit der Periode $\frac{2\pi}{a}$. Dies entspricht gerade der Länge der $1.$ Brillouin-Zone. Es genügt also Wellenzahlen in der ersten Brillouin-Zone zu betrachten. Der physikalische Grund dafür ist, dass die Auslenkung der Welle nur an einigen diskreten Punkten betrachtet wird. Ändert man den Wellenvektor um einen reziproken Gittervektor, so verändert sich die Auslenkung an diesen Punkten nicht. Wellen bei denen $\vec{k}$ um einen reziproken Gittervektor verschoben ist, sind also physikalisch nicht unterscheidbar.

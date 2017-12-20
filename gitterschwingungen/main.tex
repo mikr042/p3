@@ -33,7 +33,7 @@
 \newcommand{\emailadressen}{florian.selbiger@gmail.com, upefn@student.kit.edu}
 % optionale Angabe von Emailadresse(n) für den Kontakt mit dem Betreuer
 
-\newcommand{\versuch}{Versuchsname} % Name des Versuchs
+\newcommand{\versuch}{Gitterschwingungen} % Name des Versuchs
 \newcommand{\versuchsnr}{xx}               % bitte die korrekte Nummer dem 
                                            % Arbeitsplatz am Versuchstag 
                                            % entnehmen
@@ -43,9 +43,12 @@
 \newcommand{\betreuer}{M. Mustermann}      % Name des zuständigen Betreuers
 \newcommand{\durchgefuehrt}{02.05.17}      % Datum, an dem der Versuch 
                                            % durchgeführt wurde
+\newcommand{\e}{\operatorname{e}}                                     
 
 
 \usepackage{siunitx}
+\usepackage{icomma}
+\usepackage{amsmath}
 
 
 %% --------------------------------------
@@ -117,30 +120,32 @@
     %\pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
                                         %        added]{name of the chapter}
             
-    \setcounter{chapter}{-1}
-    \emptychapter[1]{Aufgabenstellung}{}
-    \includepdf[pages=1, 
-    pagecommand={\thispagestyle{fancy}}, 
-    offset=2.5cm -2.5cm]{./fig/fig_aufgabenblatt}
+   % \setcounter{chapter}{-1}
+    %\emptychapter[1]{Aufgabenstellung}{}
+    %\includepdf[pages=1, 
+    %pagecommand={\thispagestyle{fancy}}, 
+    %offset=2.5cm -2.5cm]{./fig/fig_aufgabenblatt}
 
-    \includepdf[pages=2, 
-    pagecommand={\thispagestyle{fancy}}, offset=-2.5cm 
-    -0.5cm, trim=0cm 4cm 0cm 0cm, clip ]{./fig/fig_aufgabenblatt}
+    %\includepdf[pages=2, 
+    %pagecommand={\thispagestyle{fancy}}, offset=-2.5cm 
+    %-0.5cm, trim=0cm 4cm 0cm 0cm, clip ]{./fig/fig_aufgabenblatt}
 
-	 \includepdf[pages=3, 
-    pagecommand={\thispagestyle{fancy}}, offset=2.5cm 
-    -0.5cm, trim=0cm 4cm 0cm 0cm, clip ]{./fig/fig_aufgabenblatt}
+	% \includepdf[pages=3, 
+    %pagecommand={\thispagestyle{fancy}}, offset=2.5cm 
+    %-0.5cm, trim=0cm 4cm 0cm 0cm, clip ]{./fig/fig_aufgabenblatt}
 
+    \chapter{Vorbereitung}
+    \input{./chap/vorbereitung.tex} %\cleardoublepage
     
-    \chapter{Auswertung}
-    \input{./chap/auswertung.tex} %\cleardoublepage
+    %\chapter{Auswertung}
+    %\input{./chap/auswertung.tex} %\cleardoublepage
 
     % appendix for more or less interesting calculations
-    \Appendix
-    \chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
+    %\Appendix
+    %\chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
     % to make the appendix appear in ToC without number. \appendixname = 
     % Appendix or Anhang (depending on chosen language)
-    \input{./chap/appendix.tex} %\cleardoublepage
+    %\input{./chap/appendix.tex} %\cleardoublepage
 
 	\begingroup
 	\let\clearpage\relax
