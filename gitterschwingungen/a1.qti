@@ -3,7 +3,7 @@ QtiPlot 0.9.8 project file
 <windows>	6
 <table>
 einatomig	12	2	1/16/18 7:35 PM
-geometry	0	0	445	220	
+geometry	0	56	445	220	
 header	1[X]	2[Y]
 ColWidth	100	100	
 <com>
@@ -28,100 +28,9 @@ WindowLabel	/home/rn15/uajiu/Documents/git/p3/gitterschwingungen/python/einatomi
 11	6.942746195779	14.61842045117
 </data>
 </table>
-<multiLayer>
-Graph1	1	1	1/16/18 7:35 PM
-geometry	769	118	507	467	active
-WindowLabel		2
-Margins	5	5	5	5
-Spacing	5	5
-LayerCanvasSize	400	300
-Alignement	0	0
-<AlignPolicy>0</AlignPolicy>
-<CommonAxes>0</CommonAxes>
-<graph>
-ggeometry	5	5	489	398
-<PageGeometry>0.01002	0.0121065	0.97996	0.96368</PageGeometry>
-PlotTitle	Title	#000000	4228
-<Antialiasing>0</Antialiasing>
-<Autoscaling>1</Autoscaling>
-<SyncScales>1</SyncScales>
-<ScaleFonts>1</ScaleFonts>
-<GridOnTop>0</GridOnTop>
-<MissingDataGap>1</MissingDataGap>
-<ClipData>1</ClipData>
-Background	#ffffff	0
-Margin	0
-Border	0	#000000
-grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
-EnabledAxes	1	1	1	1	
-AxesTitles	%(?X)	%(?Y)		%(?Y)	
-AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	5124	5124	5124
-AxesTitleDistance	2	2	2	2
-InvertedTitle	0	0	0	0
-TitleFont	Sans Serif	11	75	0	0	0
-ScaleFont0	Sans Serif	9	75	0	0	0
-ScaleFont1	Sans Serif	9	75	0	0	0
-ScaleFont2	Sans Serif	9	75	0	0	0
-ScaleFont3	Sans Serif	9	75	0	0	0
-AxisFont0	Sans Serif	9	50	0	0	0
-AxisFont1	Sans Serif	9	50	0	0	0
-AxisFont2	Sans Serif	9	50	0	0	0
-AxisFont3	Sans Serif	9	50	0	0	0
-AxesColors	#000000	#000000	#000000	#000000
-AxesNumberColors	#31363b	#31363b	#31363b	#31363b
-AxesBaseline	0	0	0	0	
-CanvasBackground	#ffffff	0
-curve	einatomig_1	einatomig_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	11	1
-curve	NonLinear1_1	NonLinear1_2	0	1	#000000	0	1	0	0	#000000	#a0a0a4	0	#000000	14	0	2	0	0	11	1
-scale	0	0	16	0	9	5	0	0
-scale	1	0	16	0	9	5	0	0
-scale	2	0	8	0	9	5	0	0
-scale	3	0	8	0	9	5	0	0
-LabelsFormat	0	6	0	6	0	6	0	6
-AxisType	0	0	0	0	
-MajorTicks	1	1	1	1
-MinorTicks	1	1	1	1
-TicksLength	5	9
-DrawAxesBackbone	1	1	1	1	1
-AxesLineWidth	1
-LabelsRotation	0	0	0	0
-LabelsPrefix				
-LabelsSuffix				
-TickLabelsSpace	4	4	4	4
-ShowTicksPolicy	0	0	0	0
-EnabledTickLabels	1	1	1	1
-<Legend>
-<Frame>1</Frame>
-<Color>#000000</Color>
-<FrameWidth>1</FrameWidth>
-<LineStyle>0</LineStyle>
-<x>0.20050125313283</x>
-<y>15.464882943144</y>
-<right>2.18546365914787</right>
-<bottom>13.9130434782609</bottom>
-<attachTo>1</attachTo>
-<onTop>1</onTop>
-<visible>1</visible>
-<Text>
-\l(1)%(1)
-\l(2)%(2)
-</Text>
-<Font>Sans Serif	9	50	0	0	0</Font>
-<TextColor>#000000</TextColor>
-<Background>#ffffff</Background>
-<Alpha>0</Alpha>
-<Angle>0</Angle>
-<AutoUpdate>1</AutoUpdate>
-<TeXOutput>0</TeXOutput>
-</Legend>
-</graph>
-<LinkXAxes>0</LinkXAxes>
-<ScaleLayers>1</ScaleLayers>
-</multiLayer>
 <table>
 zweiatomig	6	3	1/16/18 7:48 PM
-geometry	1326	65	445	220	
+geometry	914	387	445	220	
 header	1[X]	2[Y]	3[Y]
 ColWidth	100	100	100	
 <com>
@@ -140,100 +49,9 @@ WindowLabel	/home/rn15/uajiu/Documents/git/p3/gitterschwingungen/python/zweiatom
 5	3.471373097889	7.839751004652	10.42528411475
 </data>
 </table>
-<multiLayer>
-Graph2	1	1	1/16/18 7:48 PM
-geometry	215	211	493	467	
-WindowLabel		2
-Margins	5	5	5	5
-Spacing	5	5
-LayerCanvasSize	400	300
-Alignement	0	0
-<AlignPolicy>0</AlignPolicy>
-<CommonAxes>0</CommonAxes>
-<graph>
-ggeometry	5	5	475	398
-<PageGeometry>0.0103093	0.0121065	0.979381	0.96368</PageGeometry>
-PlotTitle	Title	#000000	4228
-<Antialiasing>0</Antialiasing>
-<Autoscaling>1</Autoscaling>
-<SyncScales>1</SyncScales>
-<ScaleFonts>1</ScaleFonts>
-<GridOnTop>0</GridOnTop>
-<MissingDataGap>1</MissingDataGap>
-<ClipData>1</ClipData>
-Background	#ffffff	0
-Margin	0
-Border	0	#000000
-grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
-EnabledAxes	1	1	1	1	
-AxesTitles	%(?X)	%(?Y)		%(?Y)	
-AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	5124	5124	5124
-AxesTitleDistance	2	2	2	2
-InvertedTitle	0	0	0	0
-TitleFont	Sans Serif	11	75	0	0	0
-ScaleFont0	Sans Serif	9	75	0	0	0
-ScaleFont1	Sans Serif	9	75	0	0	0
-ScaleFont2	Sans Serif	9	75	0	0	0
-ScaleFont3	Sans Serif	9	75	0	0	0
-AxisFont0	Sans Serif	9	50	0	0	0
-AxisFont1	Sans Serif	9	50	0	0	0
-AxisFont2	Sans Serif	9	50	0	0	0
-AxisFont3	Sans Serif	9	50	0	0	0
-AxesColors	#000000	#000000	#000000	#000000
-AxesNumberColors	#31363b	#31363b	#31363b	#31363b
-AxesBaseline	0	0	0	0	
-CanvasBackground	#ffffff	0
-curve	zweiatomig_1	zweiatomig_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	5	1
-curve	zweiatomig_1	zweiatomig_3	1	0	#ff0000	0	1	7	2	#ff0000	#ff0000	0	#000000	14	1	2	0	0	5	1
-scale	0	0	14	0	8	5	0	0
-scale	1	0	14	0	8	5	0	0
-scale	2	0.5	4	0	8	5	0	0
-scale	3	0.5	4	0	8	5	0	0
-LabelsFormat	0	6	0	6	0	6	0	6
-AxisType	0	0	0	0	
-MajorTicks	1	1	1	1
-MinorTicks	1	1	1	1
-TicksLength	5	9
-DrawAxesBackbone	1	1	1	1	1
-AxesLineWidth	1
-LabelsRotation	0	0	0	0
-LabelsPrefix				
-LabelsSuffix				
-TickLabelsSpace	4	4	4	4
-ShowTicksPolicy	0	0	0	0
-EnabledTickLabels	1	1	1	1
-<Legend>
-<Frame>1</Frame>
-<Color>#000000</Color>
-<FrameWidth>1</FrameWidth>
-<LineStyle>0</LineStyle>
-<x>0.58771929824561</x>
-<y>7.7658862876254</y>
-<right>1.45614035087719</right>
-<bottom>7.08695652173913</bottom>
-<attachTo>1</attachTo>
-<onTop>1</onTop>
-<visible>1</visible>
-<Text>
-\l(1)%(1)
-\l(2)%(2)
-</Text>
-<Font>Sans Serif	9	50	0	0	0</Font>
-<TextColor>#000000</TextColor>
-<Background>#ffffff</Background>
-<Alpha>0</Alpha>
-<Angle>0</Angle>
-<AutoUpdate>1</AutoUpdate>
-<TeXOutput>0</TeXOutput>
-</Legend>
-</graph>
-<LinkXAxes>0</LinkXAxes>
-<ScaleLayers>1</ScaleLayers>
-</multiLayer>
 <table>
 NonLinear1	12	2	1/16/18 8:02 PM
-geometry	1276	285	445	220	hidden
+geometry	1276	341	445	220	hidden
 header	1[X]	2[Y]
 ColWidth	100	100	
 <com>
@@ -260,7 +78,7 @@ WindowLabel	Non-linear Fit of einatomig_2	2
 </table>
 <table>
 NonLinear2	12	2	1/16/18 8:02 PM
-geometry	1276	285	445	220	hidden
+geometry	1276	341	445	220	hidden
 header	1[X]	2[Y]
 ColWidth	100	100	
 <com>
@@ -285,6 +103,155 @@ WindowLabel	Non-linear Fit of einatomig_2	2
 11	6.942746195779	14.65307081695
 </data>
 </table>
+<multiLayer>
+Graph1	1	1	1/16/18 7:35 PM
+geometry	787	0	507	467	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	4	489	398
+<PageGeometry>0.01002	0.00950119	0.97996	0.945368</PageGeometry>
+PlotTitle	 	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	k in 1/m	ω in 1/s		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	Sans Serif	9	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	Sans Serif	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#31363b	#31363b	#31363b	#31363b
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	einatomig_1	einatomig_2	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	11	1
+curve	NonLinear1_1	NonLinear1_2	0	1	#000000	0	1	0	0	#000000	#a0a0a4	0	#000000	14	0	2	0	0	11	1
+<Function>
+<Type>0</Type>
+<Title>F1</Title>
+<Expression>14.821*abs(sin(0.4091*x/2))</Expression>
+<Variable>x</Variable>
+<Range>0	8</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>1.5</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0	16	0	9	5	0	0
+scale	1	0	16	0	9	5	0	0
+scale	2	0	7.681	0	9	5	0	0
+scale	3	0	7.681	0	9	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graph2	1	1	1/16/18 7:48 PM
+geometry	189	143	493	467	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	475	398
+<PageGeometry>0.0103093	0.0118765	0.979381	0.945368</PageGeometry>
+PlotTitle	 	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	k in 1/m	ω in 1/s		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Sans Serif	11	75	0	0	0
+ScaleFont0	Sans Serif	9	75	0	0	0
+ScaleFont1	Sans Serif	9	75	0	0	0
+ScaleFont2	Sans Serif	9	75	0	0	0
+ScaleFont3	Sans Serif	9	75	0	0	0
+AxisFont0	Sans Serif	9	50	0	0	0
+AxisFont1	Sans Serif	9	50	0	0	0
+AxisFont2	Sans Serif	9	50	0	0	0
+AxisFont3	Sans Serif	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#31363b	#31363b	#31363b	#31363b
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	zweiatomig_1	zweiatomig_2	1	0	#000000	0	1	7	1	#000000	-1	0	#000000	14	2	2	0	0	5	1
+curve	zweiatomig_1	zweiatomig_3	1	0	#ff0000	0	1	7	1	#ff0000	#ff0000	0	#000000	14	1	2	0	0	5	1
+scale	0	0	14	0	8	5	0	0
+scale	1	0	14	0	8	5	0	0
+scale	2	0.5	4	0	8	5	0	0
+scale	3	0.5	4	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
 <open>1</open>
 <log>
 [1/16/18 7:59 PM	Plot: ''Graph1'']
@@ -355,4 +322,5 @@ RSS (Residual Sum of Squares) = 0.003841
 Iterations = 1
 Status = success
 ---------------------------------------------------------------------------------------
+
 </log>
