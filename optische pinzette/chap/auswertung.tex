@@ -21,20 +21,20 @@ Da das Computerprogramm leider nur schlecht funktionierte mussten wir mehrmals n
 Aus diesen drei Messreihen wurde der Mittelwert gebildet und eine lineare Regression im linearen Bereich der Kurve durchgeführt (s. Abb. \ref{fig:brown_summe}). Dazu wurde ``QtiPlot'' verwendet.
 Die Regression der Form $<r^{2}>(t)>=At+B$ ergibt
 \begin{align}
- A &= \SI{4,13\pm0,04}{\milli\meter\squared\per\second}, \\
- B &= \SI{-142\pm8}{\milli\meter\squared}.
+ A &= \SI{49,5\pm0,4}{\micro\meter\squared\per\second}, \\
+ B &= \SI{-142\pm8}{\micro\meter\squared}.
 \end{align}
 Daraus ergibt sich
 \begin{equation}
- D = \frac{A}{4} = (1,032\pm0,009)\cdot 10^{-6}\si{\meter\squared\per\second}.
+ D = \frac{A}{4} = (12,4\pm0,1)\cdot 10^{-12}\si{\meter\squared\per\second}.
 \end{equation}
-Für die systematische Unsicherheit ergibt sich durch Fehlerfortpflanzung mit $\Delta r=\SI{0,1}{\milli\metre}$ (abgeschätzt)
+Für die systematische Unsicherheit ergibt sich durch Fehlerfortpflanzung mit $\Delta r=\SI{0,1}{\micro\metre}$ (abgeschätzt)
 \begin{equation}
- \Delta D= \SI{0,103e-6}{\meter\squared\per\second}.
+ \Delta D= \SI{1,3e-12}{\meter\squared\per\second}.
 \end{equation}
 Also insgesamt
 \begin{equation}
- D = (1,032\pm0,009\pm0,103)\cdot 10^{-6}\si{\meter\squared\per\second}.
+ D = (12,4\pm0,1\pm1,3)\cdot 10^{-12}\si{\meter\squared\per\second}.
 \end{equation}
 
 
@@ -52,23 +52,23 @@ Die Messung der Geschwindigkeit ergibt: bei $v=\SI{31}{\micro\meter\per\second}$
 
 Mit $T=\SI{300}{\kelvin}$ folgt
 \begin{equation}
- F_{\textrm{T}} =  \SI{1,263e-7}{\pico\newton}.
+ F_{\textrm{T}} =  \SI{1,05e-2}{\pico\newton}.
 \end{equation}
 Die statistische Unsicherheit ergibt sich durch die statistische Unsicherheit von $D$, $\sigma_{D}$. Per gaussscher Fehlerfortpflanzung folgt
 \begin{equation}
- \sigma_{F_{\textrm{T}}} = \SI{0,014e-7}{\pico\newton}.
+ \sigma_{F_{\textrm{T}}} = \SI{0,02e-2}{\pico\newton}.
 \end{equation}
 Die systematische Unsicherheit setzt sich zusammen aus der Unsicherheit von $T$, der Unsicherheit von $v_{\textrm{max}}$ und der Unsicherheit von $D$. Es wird abgeschätzt: $\Delta T = \SI{5}{\kelvin}$.
 Es ergibt sich
 \begin{equation}
- \Delta F_{\textrm{T}} = \SI{0,130e-7}{\pico\newton}.
+ \Delta F_{\textrm{T}} = \SI{0,11e-2}{\pico\newton}.
 \end{equation}
 Also insgesamt
 \begin{equation}
- F_{\textrm{T}} = (1,263\pm0,014\pm0,130)\cdot 10^{-7} \si{\pico\newton}.
+ F_{\textrm{T}} = (1,05\pm0,02\pm0,11)\cdot 10^{-2} \si{\pico\newton}.
 \end{equation}
 
-Dies ist deutlich geringer als der erwartete Wert im Bereich von einigen $\si{\pico\newton}$. Möglicherweise wurde die Länge der Achsen im Analyseprogramm falsch geeicht.
+Dies ist etwas geringer als der erwartete Wert im Bereich von einigen $\si{\pico\newton}$.
 
 \section{Farbstoffe im Fokus des Lasers}
 
