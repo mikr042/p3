@@ -1,16 +1,16 @@
 In diesem Versuch wird die Materialanalyse mit Hilfe von Röntgenstrahlung kennengelernt. Es handelt sich dabei um eine Technik, mit der Eigenschaften von Materialien wie zum Beispiel die Schichtdicke oder die Zusammensetzung bestimmt werden können. Daher findet sie unter anderem in der Materialwissenschaft und in der Industrie bei der Qualitätskontrolle Anwendung.
-Des Weiteren wird diese Technik auch bei der Gepäckkontrolle an Flughäfen angewendet.
+
 
 \section{Bohrsches Atommodell}
 
 Bohr postulierte, dass sich die Elektronen im Atom nur auf Bahnen mit bestimmten diskreten Energien bewegen können. Diese Zustände sind stationär. Bei Übergängen zwischen den diskreten Niveaus werden Photonen ausgesendet oder absorbiert. 
 Die Energie des Photons entspricht dabei der Energiedifferenz der Niveaus. Für Atome mit einem Elektron gilt
 \begin{equation}
- E_{n} = -\frac{RhZ^{2}}{n^{2}},
+ E_{n} = -\frac{R_{\infty}hcZ^{2}}{n^{2}},
 \end{equation}
-mit der Rydbergfrequenz $R$ und der Kernladung $Z$. Für Atome mit mehreren Elektronen kann der Einfluss der Elektronen auf den inneren Schalen durch eine Abschirmkonstante $\sigma$ genähert werden. Es ergibt sich
+mit der Rydbergkonstante $R_{\infty}$, dem planckschen Wirkunsquantum $h$, der Lichtgeschwindigkeit im Vakuum $c$ und der Kernladung $Z$. Für Atome mit mehreren Elektronen kann der Einfluss der Elektronen auf den inneren Schalen durch eine Abschirmkonstante $\sigma$ genähert werden. Es ergibt sich
 \begin{equation}
- E_{n} = -\frac{Rh(Z-\sigma)^{2}}{n^{2}}.
+ E_{n} = -\frac{R_{\infty}hc(Z-\sigma)^{2}}{n^{2}}.
 \end{equation}
 
 \section{Erzeugung von Röntgenstrahlung}
@@ -19,18 +19,18 @@ Bei Röntgenstrahlung handelt es sich um elektromagnetische Strahlung im Wellenl
 
 \subsection{Charakteristische Röntgenstrahlung}
 
-Die charakteristische Strahlung entsteht bei Abregung von Elektronen aus höheren Schalen in schweren Atomen, wie zum Beispiel Eisen oder Wolfram. Dazu wird das Material mit schnellen Elektronen beschossen.
+Die charakteristische Strahlung entsteht bei Abregung von Elektronen aus höheren Schalen in schweren Atomen, wie zum Beispiel Eisen oder Wolfram. Dazu wird das Material mit schnellen Elektronen beschossen, welche Elektronen aus inneren Schalen herausschlagen.
 Die emittierte Strahlung besitzt diskrete Frequenzen gemäß dem Moseley-Gesetz \cite{litmap}
 \begin{equation}
- E = \hbar\omega = E_{m}-E_{n} = Rh\left(Z-\sigma\right)^{2}\left(\frac{1}{m^{2}}-\frac{1}{n^{2}}\right),
+ E = \hbar\omega = E_{m}-E_{n} = R_{\infty}hc\left(Z-\sigma\right)^{2}\left(\frac{1}{m^{2}}-\frac{1}{n^{2}}\right),
 \end{equation}
-mit der Rydbergfrequenz $R$, der Kernladung $Z$ und der von $m$ und $n$ abhängigen Abschirmkonstante $\sigma$.
+mit der von $m$ und $n$ abhängigen Abschirmkonstante $\sigma$.
 Die Frequenz hängt also sowohl von der Ausgangsschale als auch von der Schale im Endzustand ab. Daher wird charakteristische Strahlung mit einem Großbuchstaben für die Endschale und einem griechischen Buchstaben, der die Ausgangsschale angibt, bezeichnet.
 Also zum Beispiel K$_{\alpha}$ für den Übergang von der L- zur K-Schale, etc.
 
 \subsection{Bremsstrahlung}
 
-Werden Elektronen auf eine Kathode geschossen, so werden sie auf dieser abgebremst und verlieren dabei ihre kinetische Energie (teilweise) und geben sie in Form von Röntgenstrahlung ab.
+Werden Elektronen auf eine Kathode geschossen, so werden sie im Potential der geladenen Kerne abgebremst und verlieren dabei ihre kinetische Energie (teilweise) und geben sie in Form von Röntgenstrahlung ab.
 Das zugehörige Spektrum ist kontinuierlich, unterhalb einer Frequenz von
 \begin{equation}
  \omega = \frac{eU}{\hbar},
@@ -41,7 +41,7 @@ wobei $U$ die Beschleunigungsspannung bezeichnet.
 
 Es gibt drei Prozesse, über die Röntgenstrahlung mit Materie wechselwirkt: \cite{Dem16}
 \begin{itemize}
- \item Photoeffekt: Ein Röntgenquant schlägt dabei ein Elektron aus einer tieferen Schale heraus. Dieser Effekt ist der in diesem Versuch dominierende.
+ \item Photoeffekt: Ein Röntgenquant schlägt dabei ein Elektron aus einer tieferen Schale heraus. Dieser Effekt wird in diesem Versuch ausgenutzt.
  \item Comptoneffekt: Hierbei stößt ein Röntgenquant mit einem Elektron aus einer äußeren Schale und überträgt dabei nur einen Teil seiner Energie. Der Prozess ist nur mit Elektronen aus den äußeren Schalen möglich, da diese Elektronen fast frei sind. 
  \item Paarbildung: Es kann auch zur Bildung eines Elektron-Positron-Paars kommen, falls $E\geq 2m_{e}c^{2}$. Dieser Prozess kann nur im Coulombfeld eines schweren Kerns auftreten, da der Impuls erhalten sein muss und im CMS der Gesamtimpuls von Elektron und Positron null ist, der Impuls des Röntgenquants jedoch nicht verschwindet.
 \end{itemize}
@@ -50,7 +50,7 @@ Bei der Absorption von Röntgenstrahlung beobachtet man sogenannte Absorptionska
 \section{Kalibrierung des Röntgenenergiedetektors (RED)}
 
 Beim im Versuch verwendeten RED handelt es sich um einen Si-pin-Detektor. Dieser funktioniert folgendermaßen: Ein einfallendes Röntgenquant erzeugt durch den Photoeffekt ein freies Elektron, dessen kinetische Energie von der Energie des Quants abhängt.
-Die Elektronen erzeugen nun im Si-Kristall Elektron-Loch-Paare. Deren Anzahl ist ein Maß für die Röntgenenergie. Das Absaugen der Elektron-Loch-Paare mit einer äußeren Spannung führt zu einem Ladungsimpuls im Vielkanalanalysator (VKA).
+Die Elektronen erzeugen nun im Si-Kristall weitere Elektron-Loch-Paare. Deren Anzahl ist ein Maß für die Röntgenenergie. Das Absaugen der Elektron-Loch-Paare mit einer äußeren Spannung führt zu einem Ladungsimpuls im Vielkanalanalysator (VKA).
 
 Um den RED zu kalibrieren, muss nun die Impulshöhe einem Energiewert (also einer Frequenz) zugeordnet werden. Dazu werden bekannte charakteristische Linien verwendet.\\
 Als erstes wird nur die Strahlung der Röntgenröhre gemessen und den Peaks die Energien der L$_\alpha$ und L$_\beta$ Linien von Wolfram zugeordnet. Dabei wurden die auf dem Aufgabenblatt beschriebenen Einstellungen übernommen, es wurde lediglich die die Verstärkung auf V = 2 geändert und der Doppelwinkel 2$\Theta$ = \SI{0.3}{\degree} gewählt.\\
@@ -81,7 +81,7 @@ Um die Energieauflösung zu bestimmen wird ohne Blende die Zn-Probe bei untersch
 
 \section{Qualitative Röntgenfluoreszenzanalyse an Metallen}
 
-In diesem Versuch werden die Energien der charakteristischen K$_{\alpha}$- und K$_{\beta}$-Linien von Eisen und Wolfram gemessen. Daraus werden dann die Rydberg-Frequenz und die Abschirmkonstanten bestimmt.
+In diesem Versuch werden die Energien der charakteristischen K$_{\alpha}$- und K$_{\beta}$-Linien von Eisen gemessen. Daraus werden dann die Rydberg-Frequenz und die Abschirmkonstanten bestimmt.
 Nach dem Moseley-Gesetz gilt (s. Abschnitt 1.1.1)
 \begin{align}
  \textrm{K}_{\alpha}: \quad \sqrt{E} &= \frac{\sqrt{3Rh}}{2}\left(Z-\sigma_{2,1}\right), \\ 

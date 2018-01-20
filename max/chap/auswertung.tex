@@ -90,12 +90,12 @@ Daraus ergibt sich
 \end{equation}
 Für die Strecke $x$ gilt
 \begin{equation}
- x = \sqrt{2}dn,
+ x = 2\sqrt{2}dn,
 \end{equation}
-mit der Schichtdicke $d$ und der Anzahl der Schichten $n$. Der Vorfaktor kommt daher, dass die Probe in einem Winkel von $\alpha=\SI{45}{\degree}$ zur Strahlrichtung steht (s. Abb. \ref{fig:41}). 
+mit der Schichtdicke $d$ und der Anzahl der Schichten $n$. Der Vorfaktor kommt daher, dass die Probe in einem Winkel von $\alpha=\SI{45}{\degree}$ zur Strahlrichtung steht (s. Abb. \ref{fig:41}) und der Strahl die Probe zweimal durchquert. 
 Insgesamt ergibt sich also
 \begin{equation}
- \ln\left(\frac{I}{I_{0}}\right) = \sqrt{2}\mu\rho dn. 
+ \ln\left(\frac{I}{I_{0}}\right) = 2\sqrt{2}\mu\rho dn. 
 \end{equation}
 Die Schichtdicke kann nun aus einer linearen Regression der Form $\ln\left(\frac{I}{I_{0}}\right)(n) = an+b$ bestimmt werden.
 
@@ -109,9 +109,9 @@ Die lineare Regression wird mit ``QtiPlot'' durchgeführt (s. Abb. \ref{fig:42})
 \end{align}
 Da für Aluminium gilt $\rho=\SI{2,7}{\gram\per\centi\metre\cubed}$ und $\mu=\SI{92,8}{\centi\metre\squared\per\gram}$ \cite{litmap}, ergibt sich für die Schichtdicke
 \begin{equation}
- d = -\frac{a}{\sqrt{2}\mu\rho} = \SI{15,2\pm1,3}{\micro\metre}.
+ d = -\frac{a}{2\sqrt{2}\mu\rho} = \SI{7,6\pm0,6}{\micro\metre}.
 \end{equation}
-In der Literatur findet sich für die Dicke von Aluminiumfolie $d\approx\SI{10}{\micro\metre}$ bis $\SI{15}{\micro\metre}$ \cite{wiki}. Dies ist in Übereinstimmung mit dem Ergebnis des Experiments.
+In der Literatur findet sich für die Dicke von Aluminiumfolie $d\approx\SI{10}{\micro\metre}$ bis $\SI{15}{\micro\metre}$ \cite{wiki}. Dies liegt in der gleichen Größenordnung wie unser Ergebnis.
 
 \begin{figure}[tb]
  \centering
@@ -191,7 +191,7 @@ Werden die Konzentrationen auf $100\%$ skaliert, so ergibt sich
  C_{\textrm{Zn}} &= 42\%, \\
  C_{\textrm{Pb}} &= 36\%.
 \end{align}
-Da die genaue Zusammensetzung solcher Hartmetallfräser je nach Hersteller und Modell variiert, gibt es hierzu keine Literaturwerte. Wir vermuten jedoch, dass sich in solchen Hartmetallen vorwiegend Titan und Wolfram befinden, was dem Ergebnis widerspricht.
+Tatsächlich besteht der Fräser aus Wolframcarbid. Vermutlich wurden die Peaks in der Vergleichsmessung in Aufgabe 1 dem falschen Kanal zudeordnet, da die Zählrate zu hoch war. 
 
 \xtable{htb}{a6_probe_e}{Gemessene Peaks für Probe E}{(Aufg. 6)}
 
