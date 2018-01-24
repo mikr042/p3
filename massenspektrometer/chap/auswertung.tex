@@ -11,7 +11,7 @@ Bei den restlichen Peaks der schwereren Elemente handelt es sich um molekularen 
 	\label{fig:untergrund_1}
 \end{figure}
 
-Zur Bestimmung des Auflösungsvermögens wird, wie in der Vorbereitung beschrieben, die z\%-Linienbreite Definition verwendet, wobei z=20 gewählt wurde.\\
+In diesem Versuch wird die \%-Linienbreite Definition zur Bestimmung der Auflösung verwendet, da diese auch für alleinstehende Linien anwendbar ist. $\Delta m$ ergibt sich hier durch die Linienbreite in $20\%$ Höhe. Es wird erwartet, dass das Auflösungsvermögen in Abhängigkeit von $m$ steigt, da die Linienbreite in Abhängigkeit von $m$ konstant bleiben sollte.\\
 Dafür wurde noch einmal mit höherer Abtastrate die Massenbereiche 1-5\;u und 25-30\;u gemessen.\\
 Wie erwartet steigt das Auflösungsvermögen mit steigendem m, wie in Tabelle \ref{tab:a1_m} angegeben. Dies liegt daran, dass die Linienbreite $\Delta m$ bei unterschiedlichen Massenzahlen näherungsweise konstant $\leq$ 1 ist, wobei die Massenzahl monoton steigt.\\
 \begin{figure}[h]
@@ -79,7 +79,19 @@ In beiden Fällen liegt der Literaturwert außerhalb der Fehlergrenzen und die W
 
 \section{Dissoziationsenergie von Stickstoff}
 
-Wie in der Vorbereitung beschrieben (\ref{sec:v3}) werden als Erstes die Auftrittsenergien von N$^+$ und N$_2^+$ bestimmt. Dabei wird analog zum vorherigen Versuch verfahren (\ref{sec:argon}).\\
+In diesem Versuch werden die Dissoziationsenergien für das neutrale Stickstoffmolekül und für das Stickstoffmolekülion bestimmt. Unter Elektronenbeschuss sind die folgenden Reaktionswege möglich
+\begin{align}
+\textrm{N}_{2} \, + \, \textrm{e}^{-} \, &\to \, \textrm{N}_{2}^{+} \, + \, 2\textrm{e}^{-}, \\
+\textrm{N}_{2} \, + \, \textrm{e}^{-} \, &\to \, \textrm{N}^{+} \, + \, \textrm{N} \, + \, 2\textrm{e}^{-}, \\
+\textrm{N}_{2}^{+} \, + \, \textrm{e}^{-} &\, \to \, \textrm{N}^{+} \, + \textrm{N} \, + \, \textrm{e}^{-}.
+\end{align}
+Durch Messung der Auftrittsenergien für $m=14$ und $m=28$ können nun die Dissoziationsenergien bestimmt werden. Für diese ergibt sich
+\begin{align*}
+E_{\textrm{D}}(\textrm{N}_{2}) &= E_{\textrm{A}}(\textrm{N}^{+}) - E_{\textrm{I}}, \\
+E_{\textrm{D}}(\textrm{N}_{2}^{+}) &= E_{\textrm{A}}(\textrm{N}^{+}) - E_{\textrm{A}}(\textrm{N}_{2}^{+}),
+\end{align*}
+wobei $E_{\textrm{D}}$ die Dissoziationsenergie, $E_{\textrm{A}}$ die Auftrittsenergie und $E_{\textrm{I}}$ die Ionisationsenergie bezeichnet.\\
+
 \begin{figure}[h]
 	\centering
 	\subfigure[]{\includegraphics[width=0.49\textwidth]{fig/n+}}
@@ -99,11 +111,11 @@ E_{a,N_2^+} &= (17,57\pm 0,53)\;\textrm{eV}
 \end{align}
 Mit Kenntnis der Ionisationsenergie von Stickstoff (E$_\textrm{I}$ = 14,5\;eV) können nun die Dissoziationsenergien bestimmt werden:
 \begin{align}
-	E_\textrm{D}(N_2) &= E_a(N^+) - E_a(N_2^+) = (11,92\pm 0,56)\;\textrm{eV}\\
-	E_\textrm{D}(N_2^+) &= E_a(N^+) - E_\textrm{I} = (8,85\pm 0,19)\;\textrm{eV}
+	E_\textrm{D}(N_2) &= E_a(N^+) - E_a(N_2^+) = (8,85\pm 0,19)\;\textrm{eV}\\
+	E_\textrm{D}(N_2^+) &= E_a(N^+) - E_\textrm{I} = (11,92\pm 0,56)\;\textrm{eV}
 \end{align}
 Vergleicht man die gemessenen Werte mit den Literaturwerte (E$_\textrm{D}$(N$_2^+$) = 8,713\;eV, E$_\textrm{D}$(N$_2$) = 9,759\;eV, \cite{kobra}) so
-ergibt sich eine Abweichung von 22,1\% für neutrales, bzw 1,6\% für einfach ionisierten molekularen Stickstoff.\\
+ergibt sich eine Abweichung von 9,3\% für neutrales, bzw 36,8\% für einfach ionisierten molekularen Stickstoff.\\
 Das Ergebnis für einfach ionisierten Stickstoff ist also sehr gut, obwohl der Messwert für neutralen Stickstoff relativ weit abweicht. Dies kann an einem nicht beachteten systematischen Fehler liegen, der bei beiden Messungen in die gleiche Richtung verfälscht. Dies würde erklären, warum die Differenz zweier Messwerte ein gutes Ergebnis liefert, wenn aber ein Literaturwert abgezogen wird, eine recht große Abweichung nach oben zu sehen ist.\\
 
 \section{Quantitative Analyse der Raumluft}
@@ -312,16 +324,14 @@ Die Abweichung vom Literaturwert beträgt also ca. $34\%$ und liegt außerhalb d
 Um die Temperaturabhängigkeit der Zusammensetzung des Gases in der Messkammer zu überprüfen, wurden erneut zwei Restgasspektren aufgenommen.
 Dabei wurde die Kammer für das zweite Spektrum mit flüssigem Stickstoff auf ca. 77\;K herunter gekühlt.\\
 \begin{figure}[H]
-	\centering
-	\subfigure[]{\includegraphics[width=0.49\textwidth]{fig/restgas_raumtemp}}
-	\subfigure[]{\includegraphics[width=0.49\textwidth]{fig/restgas_kalt}}
-	\caption{Restgasspektren bei unterschiedlichen Temperaturen.}
+	\centering\includegraphics[width=0.9\textwidth]{fig/restgas.pdf}
+	\caption{Restgasspektren bei unterschiedlichen Temperaturen, rote Linie bei T = 77\;K}
 	\label{fig:plot_restgas}
 \end{figure}
 Die durch die Sensitivität korrigierten Drücke sind in Tabelle \ref{tab:a7_peaks} aufgeführt.\\
 \begin{table}[tb]
 	\centering
-	\caption{Messwerte der  Partialdrücke}
+	\caption{Messwerte der  Partialdrücke (Offset nicht korrigiert)}
 	\label{tab:a7_peaks}
 	\begin{tabular}{ccc} \toprule
 		&\multicolumn{2}{c}{Partialdruck in 10$^-10$\;mbar}\\
@@ -335,5 +345,5 @@ Die durch die Sensitivität korrigierten Drücke sind in Tabelle \ref{tab:a7_pea
 		\bottomrule
 	\end{tabular}
 \end{table}\\
-Die Summe der Partialdrücke beträgt $1,6\cdot 10^{-9}$. Dies ist deutlich geringer als der in der Ionisationskammer gemessene Druck. Das liegt daran, dass nicht alle Gasmoleküle ionisiert werden und somit auch nicht detektiert werden können.\\
-Wie man gut sieht, nimmt vor allem der Anteil von Wasser und Kohlenstoffdioxid stark ab. Dies liegt daran, dass der Schmelzpunkt der beiden Moleküle über 77\;K liegt, sie liegen also in fester Phase vor und können so nicht mehr richtig detektiert werden.\\
+Die Summe der Partialdrücke beträgt $1,6\cdot 10^{-9}$\;mbar. Dies ist deutlich geringer als der mit dem Ionisationsmanometer gemessene Druck. Das liegt daran, dass nicht alle Gasmoleküle ionisiert werden und somit auch nicht detektiert werden können.\\
+Wie man gut sieht, nimmt vor allem der Anteil von Wasser und Kohlenstoffdioxid stark ab. Dies liegt daran, dass der Schmelzpunkt der beiden Moleküle über 77\;K liegt, sie liegen also in fester Phase vor und können so nicht mehr detektiert werden.\\
