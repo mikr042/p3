@@ -1,0 +1,51 @@
+In this experiment the angular correlation and anisotropy of $\gamma$-radiation is measured.
+
+\section{Angular distribution of $\gamma$-radiation}
+
+When an excited state of a nucleus with spin $J_{1}$ transitions into a state with Spin $J_{2}$, the resulting distribution of $\gamma$-rays is isotropic, if the following conditions are met:
+\begin{itemize}
+ \item the degenerate substates of the initial state are equally occupied
+ \item all permitted transitions are observed
+\end{itemize}
+As an example the transition between a state with $J_{1}=1$ and $J_{2}=0$ is considered. The excited state is threefold degenerate, corresponding to the three possible magnetic quantum numbers $m_{1}=1,\,0,\,-1$. The ground state is not degenerate.
+The selection rule for electric dipole transitions is, that the magnetic quantum number changes by $\pm1$ or remains unchanged. Thus all three excited states can decay into the ground state. The transition probabilities are given as \cite{BB} 
+\begin{align}
+ W_{+} \d\Omega &= \frac{3}{16}\pi\left(1+\cos^{2}\theta\right)\d\Omega, \\
+ W_{0} \d\Omega &= \frac{3}{8}\pi\sin^{2}\theta\d\Omega, \\
+ W_{-} \d\Omega &= \frac{3}{16}\pi\left(1+\cos^{2}\theta\right)\d\Omega,
+\end{align}
+where $\d\Omega$ is an infinitesimal solid angle element and $\theta$ the angle between the direction of emission and the quantisation axis.
+While the sum of all probabilities is independent of $\theta$ and therefore isotropic, the individual probabilities are not isotropic.
+
+There are two methods of creating anisotropic $\gamma$-radiation:
+\begin{itemize}
+ \item Applying an external magnetic field: The application of an external magnetic field $H$ to the sample lifts the degeneracy of the initial states. Their occupation numbers change according to Boltzmann-statistics
+	\begin{equation}
+	 \frac{N_{i}}{N_{j}} = \exp\left(-\frac{\Delta E}{\kb T}\right),
+	\end{equation}
+	where $\Delta E$ is the energy difference between two levels which is given as $\mu_{\textrm{B}}H\frac{m_{i}-m_{j}}{J}$. Thus the energy levels aren't equally populated anymore and therefore the resulting radiation is in general not isotropic.
+ \item Simultaneous measurement of two transitions: Now the anisotropy is created by simultaneously measuring two correlated transitions. As an example the following cascade is considered: $J_{1}=0$, $J_{2}=1$ and $J_{3}$ arbitrary. Now the first transition is characterised by the probabilities which were discussed above. For the second transition the intermediate state $J_{2}=1, \, m_{2}=0$ is not occupied and therefore the emission probailities for the second $\gamma$-quant are not isotropic.  
+\end{itemize}
+
+In the experiment the second method is used. The differential cross section for a cascade of two $\gamma$-quants with angle $\theta$ between their respective directions of emission is \cite{BB}
+\begin{equation}
+ \frac{\d\sigma}{\d\Omega} = \sum_{i=1}^{i_{max}} A_{2i}P_{2i}\left(\cos\theta\right), \quad i_{max}= \textrm{min}(L_{1},L_{2},J_{2}),
+\end{equation}
+where the $P_{2i}$ are the Legendre-Polynomials. The correlation function is given as
+\begin{equation}
+ K(\theta) = \frac{\d\sigma(\theta)}{\d\Omega} / \frac{\d\sigma(\SI{90}{\degree})}{\d\Omega}.
+\end{equation}
+This quantity is more useful in the experiment. The anisotropy can then be characterised by
+\begin{equation}
+ An = K(\SI{180}{\degree})-1.
+\end{equation}
+
+\section{Experimental realisation}
+
+In the experiment the $\beta^{-}$-decay from $^{60}$Co to $^{60}$Ni is used. $^{60}$Ni transitions into the ground state while emitting a cascade of two $\gamma$-rays ($L_{1}=2,\,L_{2}=2$: electric quadrupole radiation). The intermediate state has spin $J_{2}=2$. Thus it holds
+\begin{equation}
+ K(\theta) = 1 + a_{2}\cos^{2}(\theta) + a_{4}\cos^{4}(\theta),
+\end{equation}
+with $a_{2}=\frac{1}{8}$ and $a_{4}=\frac{1}{24}$. \cite{BB}
+
+
