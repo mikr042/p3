@@ -40,12 +40,48 @@ This quantity is more useful in the experiment. The anisotropy can then be chara
  An = K(\SI{180}{\degree})-1.
 \end{equation}
 
+\section{Interaction of $\gamma$-radiation with matter}
+
+$\gamma$-quants are uncharged particles. Therefore they interact very differently with matter compared to $\alpha$- or $\beta$-quants. Most of the $\gamma$-quants don't lose energy but a fraction of them is continually absorbed. The intensity of $\gamma$-radiation in matter is therefore given as
+\begin{equation}
+ I(x) = I(0) \exp\left(-\mu x\right),
+\end{equation}
+where $\mu$ is the linear absorption coefficient and $x$ the traveled distance. Besides absorption, the ways $\gamma$-quants interact with matter are the following:
+\begin{itemize}
+ \item Compton-effect: Here a $\gamma$-quant collides with an nearly free electron from an outer shell. In this process the $\gamma$-quant loses energy. The energy which the $\gamma$ transfers to the electron is \cite{BB}
+	\begin{equation}
+	  \Delta E = \frac{\frac{E^{2}}{E_{0}}\left(1-\cos\theta\right)}{1+\frac{E}{E_{0}}\left(1-\cos\theta\right)},
+	\end{equation}
+	where $E_{0}$ is the rest energy of the electron, $E$ the energy of the incident $\gamma$-quant and $\theta$ the scattering angle. Thus there is a maximum energy transfered to the electron
+	\begin{equation}
+	 \Delta E_{\textrm{max}} = \frac{2E^{2}}{2E+E_{0}},
+	\end{equation}
+	which is always stricty smaller than $E$. Thus there is a maximum energy up to which compton-scattered $\gamma$-quants are detected. This is known as the compton-edge. In the experiment only unscattered $\gamma$-quants ought to be detected. Therefore only events with an energy of about $60$-$70\%$ of the expected energy are counted.
+ \item Photoeffect: Here a $\gamma$ knocks a bound electron out of an atom and is absorbed by the atom. The kinetic energy of the released electron is related to the energy of the $\gamma$-quant.
+ \item Pair creation: If a $\gamma$ possesses an energy greater than two times the electrons mass $E\geq2m_{e}c^{2}\approx\SI{1}{\mega\electronvolt}$, pair creation can occur. In this process the $\gamma$ annihilates into an electron-positron-pair. The process occurs only in the vicinity of a heavy nucleus, since momentum has to be conserved.
+\end{itemize}
+
+
 \section{Experimental realisation}
 
-In the experiment the $\beta^{-}$-decay from $^{60}$Co to $^{60}$Ni is used. $^{60}$Ni transitions into the ground state while emitting a cascade of two $\gamma$-rays ($L_{1}=2,\,L_{2}=2$: electric quadrupole radiation). The intermediate state has spin $J_{2}=2$. Thus it holds
+In the experiment the $\beta^{-}$-decay from $^{60}$Co to $^{60}$Ni (see figure \ref{fig:term}) is used. $^{60}$Ni transitions into the ground state while emitting a cascade of two $\gamma$-rays ($L_{1}=2,\,L_{2}=2$: electric quadrupole radiation). The intermediate state has spin $J_{2}=2$. Thus it holds
 \begin{equation}
  K(\theta) = 1 + a_{2}\cos^{2}(\theta) + a_{4}\cos^{4}(\theta),
 \end{equation}
 with $a_{2}=\frac{1}{8}$ and $a_{4}=\frac{1}{24}$. \cite{BB}
+
+\begin{figure}[tb]
+ \centering
+ \includegraphics[scale=0.8]{./fig/termschema.png}
+ \caption{Term diagram of the transition from $^{60}$Co to $^{60}$Ni \cite{BB}}
+ \label{fig:term}
+\end{figure}
+
+For the measurement two NaI-scintillators are used. One of them can be placed in angles $\SI{180}{\degree},\,\SI{135}{\degree},$ and $\SI{90}{\degree}$ relative to the other. To get only the $\gamma$-rays from the cascade a coincidence-measurement is used. Nevertheless random coincidences may be counted as well. The rate between the number of true coincidences $N_{c}$ and the number of random ones $N_{r}$ is approximately given as
+\begin{equation}
+ \frac{N_{c}}{N_{r}} \approx \frac{1}{\tau_{\textrm{A}}A},
+\end{equation}
+where $\tau_{\textrm{A}}$ is the resolving time of the detector and $A$ the activity of the sample.
+
 
 
