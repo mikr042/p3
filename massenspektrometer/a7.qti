@@ -8507,7 +8507,7 @@ WindowLabel	/home/rn15/uajiu/Documents/git/p3/massenspektrometer/messwerte/20170
 </table>
 <multiLayer>
 Graph1	1	1	11/21/17 3:11 PM
-geometry	919	3	507	467	
+geometry	919	3	507	467	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -8518,7 +8518,7 @@ Alignement	0	0
 <graph>
 ggeometry	5	5	489	398
 <PageGeometry>0.01002	0.0121065	0.97996	0.96368</PageGeometry>
-PlotTitle	T = 300 K	#000000	4228
+PlotTitle	 	#000000	4228
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
 <SyncScales>1</SyncScales>
@@ -8550,6 +8550,7 @@ AxesNumberColors	#31363b	#31363b	#31363b	#31363b
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	0
 curve	20170703_512330_1	20170703_512330_2	0	1	#000000	0	1	7	0	#000000	#000000	0	#000000	14	1	2	0	0	2102	1
+curve	20170703_512720_1	20170703_512720_2	0	1	#ff0000	0	1	7	0	#ff0000	#ff0000	0	#000000	14	1	2	0	0	2118	1
 scale	0	-2	10	0	7	5	0	0
 scale	1	-2	10	0	7	5	0	0
 scale	2	0	50	0	6	5	0	0
@@ -8573,7 +8574,7 @@ EnabledTickLabels	1	1	1	1
 </multiLayer>
 <multiLayer>
 Graph2	1	1	11/21/17 3:30 PM
-geometry	1391	7	527	467	active
+geometry	1391	7	527	467	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5

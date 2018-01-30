@@ -1,11 +1,11 @@
 QtiPlot 0.9.8 project file
 <scripting-lang>	muParser
-<windows>	6
+<windows>	8
 <table>
 einatomig	12	2	1/16/18 7:35 PM
-geometry	0	56	445	220	
+geometry	23	1	445	220	
 header	1[X]	2[Y]
-ColWidth	100	100	
+ColWidth	112	100	
 <com>
 </com>
 ColType	0;0/13	0;0/13
@@ -103,6 +103,48 @@ WindowLabel	Non-linear Fit of einatomig_2	2
 11	6.942746195779	14.65307081695
 </data>
 </table>
+<table>
+NonLinear3	6	2	1/24/18 12:40 PM
+geometry	1294	0	445	220	hidden
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel	Non-linear Fit of zweiatomig_3	2
+<data>
+0	0.5785621829815	13.05877097714
+1	1.157124365963	12.78068559624
+2	1.735686548945	12.3280077662
+3	2.314248731926	11.72311333945
+4	2.892810914908	11.02491095557
+5	3.471373097889	10.45110283042
+</data>
+</table>
+<table>
+NonLinear4	6	2	1/24/18 12:48 PM
+geometry	1294	0	445	220	hidden
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel	Non-linear Fit of zweiatomig_2	2
+<data>
+0	0.5785621829815	1.513427340164
+1	1.157124365963	3.000593440657
+2	1.735686548945	4.433325933981
+3	2.314248731926	5.776736260697
+4	2.892810914908	6.970919717208
+5	3.471373097889	7.841821677239
+</data>
+</table>
 <multiLayer>
 Graph1	1	1	1/16/18 7:35 PM
 geometry	787	0	507	467	
@@ -115,13 +157,15 @@ Alignement	0	0
 <CommonAxes>0</CommonAxes>
 <graph>
 ggeometry	5	4	489	398
-<PageGeometry>0.01002	0.00950119	0.97996	0.945368</PageGeometry>
+<PageGeometry>0.01002	0.00968523	0.97996	0.96368</PageGeometry>
 PlotTitle	 	#000000	4228
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
+<SyncScales>0</SyncScales>
 <ScaleFonts>1</ScaleFonts>
 <GridOnTop>0</GridOnTop>
 <MissingDataGap>1</MissingDataGap>
+<ClipData>1</ClipData>
 Background	#ffffff	0
 Margin	0
 Border	0	#000000
@@ -189,7 +233,7 @@ EnabledTickLabels	1	1	1	1
 </multiLayer>
 <multiLayer>
 Graph2	1	1	1/16/18 7:48 PM
-geometry	189	143	493	467	active
+geometry	279	129	493	467	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -199,13 +243,15 @@ Alignement	0	0
 <CommonAxes>0</CommonAxes>
 <graph>
 ggeometry	5	5	475	398
-<PageGeometry>0.0103093	0.0118765	0.979381	0.945368</PageGeometry>
+<PageGeometry>0.0103093	0.0121065	0.979381	0.96368</PageGeometry>
 PlotTitle	 	#000000	4228
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
+<SyncScales>0</SyncScales>
 <ScaleFonts>1</ScaleFonts>
 <GridOnTop>0</GridOnTop>
 <MissingDataGap>1</MissingDataGap>
+<ClipData>1</ClipData>
 Background	#ffffff	0
 Margin	0
 Border	0	#000000
@@ -231,10 +277,50 @@ AxesBaseline	0	0	0	0
 CanvasBackground	#ffffff	0
 curve	zweiatomig_1	zweiatomig_2	1	0	#000000	0	1	7	1	#000000	-1	0	#000000	14	2	2	0	0	5	1
 curve	zweiatomig_1	zweiatomig_3	1	0	#ff0000	0	1	7	1	#ff0000	#ff0000	0	#000000	14	1	2	0	0	5	1
+curve	NonLinear3_1	NonLinear3_2	0	0	#ff0000	0	1.5	0	0	#000000	#a0a0a4	0	#000000	14	0	2	0	0	5	1
+curve	NonLinear4_1	NonLinear4_2	0	0	#000000	0	1.5	0	0	#000000	#a0a0a4	0	#000000	14	0	2	0	0	5	1
+<Function>
+<Type>0</Type>
+<Title>F3</Title>
+<Expression>sqrt(26.786*3.179 - 26.786*sqrt(3.179^2 - 9.486*sin(0.83*x/2)^2))</Expression>
+<Variable>x</Variable>
+<Range>0	4</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1.4</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F1</Title>
+<Expression>sqrt(27.208*3.179 + 27.208*sqrt(3.179^2 - 9.486*sin(0.853*x/2)^2))</Expression>
+<Variable>x</Variable>
+<Range>0	4</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>1.4</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
 scale	0	0	14	0	8	5	0	0
-scale	1	0	14	0	8	5	0	0
-scale	2	0.5	4	0	8	5	0	0
-scale	3	0.5	4	0	8	5	0	0
+scale	1	-2	14	0	9	5	0	0
+scale	2	0	3.672	0	5	5	0	0
+scale	3	-1	5	0	7	5	0	0
 LabelsFormat	0	6	0	6	0	6	0	6
 AxisType	0	0	0	0	
 MajorTicks	1	1	1	1
@@ -320,6 +406,42 @@ RMSE (Root Mean Squared Error) = 0.0196
 RSS (Residual Sum of Squares) = 0.003841
 ---------------------------------------------------------------------------------------
 Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+
+
+[1/24/18 12:40 PM	Plot: ''Graph2'']
+Non-linear Fit of dataset: zweiatomig_3, using function: sqrt(D*(3.179+sqrt(3.179^2-9.486*sin(x*a/2)^2)))
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 5.7856e-01 to x = 3.4714e+00
+D = 2.7208e+01 +/- 4.6338e-02
+a = 8.5267e-01 +/- 4.1281e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.1003e-04
+R^2 = 0.9998
+Adjusted R^2 = 0.9997
+RMSE (Root Mean Squared Error) = 0.01449
+RSS (Residual Sum of Squares) = 0.0008401
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[1/24/18 12:48 PM	Plot: ''Graph2'']
+Non-linear Fit of dataset: zweiatomig_2, using function: sqrt(D*(3.179-sqrt(3.179^2-9.486*sin(x*a/2)^2)))
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = 5.7856e-01 to x = 3.4714e+00
+D = 2.6786e+01 +/- 7.4456e-02
+a = 8.2993e-01 +/- 1.5585e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.7698e-05
+R^2 = 1
+Adjusted R^2 = 1
+RMSE (Root Mean Squared Error) = 0.005263
+RSS (Residual Sum of Squares) = 0.0001108
+---------------------------------------------------------------------------------------
+Iterations = 4
 Status = success
 ---------------------------------------------------------------------------------------
 

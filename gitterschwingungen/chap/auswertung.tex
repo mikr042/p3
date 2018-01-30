@@ -70,8 +70,8 @@ Die roten Datenpunkte stellen den optischen Zweig da, die hohlen schwarzen Daten
 Die Schallgeschwindigkeit lässt sich aufgrund der Kleinwinkelnäherung aus einer linearen Regression zwischen dem Ursprung und dem ersten Wertepaar bestimmen.\\
 Dies ergibt für die beiden unterschiedlichen Ketten:
 \begin{itemize}
-	\item Einatomige Kette: $v_{schall,1} = \frac{\omega_1}{k_1} = (3,007 \pm 0,0055)\;\si{\meter\per\second}$\\
-	\item Zweiatomige Kette: $v_{schall,2} = $
+	\item Einatomige Kette: $v_{schall,1} = \frac{\omega_1}{k_1} = (3,007 \pm 0,0055)\;\si{\meter\per\second}$
+	\item Zweiatomige Kette: $v_{schall,2} = (2,606 \pm 0,005 )\;\si{\meter\per\second}$
 \end{itemize}
 Die Fehler sind dabei rein systematisch mit Gaußscher Fehlerfortpflanzung berechnet, da nicht genügend Messwerte verwendet werden um einen statistischen Fehler zu erhalten. Es wurde ein systematischer Fehler auf die Frequenz von $\Delta\omega = 0,001 \si{\per\second}$ angenommen.
 
@@ -79,7 +79,7 @@ Die Fehler sind dabei rein systematisch mit Gaußscher Fehlerfortpflanzung berec
 
 Das Massenverhältnis der beiden unterschiedlichen Gleiter ist gegeben durch
 \begin{equation}
-	\frac{M}{m} = 2\cdot\frac{v_{schall,1}}{v_{schall,2}} - 1 = 
+	\frac{M}{m} = 2\cdot\left(\frac{v_{schall,1}}{v_{schall,2}}\right)^2 - 1 = 1,66 \pm 0,014
 \end{equation}
 
 \section{Bestimmung der Federkonstanten}
@@ -106,12 +106,39 @@ Mit der bereits berechneten Schallgeschwindigkeit folgt:
 	D = m\cdot\left(\frac{v_{schall,1}}{a_1}\right)^2 = (27,2 \pm 0,16)\;\si{\kilogram\per\square\second}
 \end{equation}
 
+\subsection{Aus der Dispersionsrelation der zweiatomigen Kette}
+
+Mit dem bereits bekannten Massenverhältnis und der Masse des leichteren Gleiters lässt sich eine Regression an die Dispersionsrelation der zweiatomigen Kette durchführen.\\
+Für den optischen, bzw akustischen Zweig ergibt diese:
+\begin{align}
+	D_\textrm{o} &= (27,21 \pm 0,046)\;\si{\kilogram\per\square\second}\\
+	a_{2,\textrm{o}} &= (0,852 \pm 0,004)\;\si{\meter}\\
+	D_\textrm{a} &= (26,79 \pm 0,074)\;\si{\kilogram\per\square\second}\\
+	a_{2,\textrm{a}} &= (0,820 \pm 0,0015)\si{\si{\meter}}
+\end{align}
+Gemittelt ergeben sich also für die Feder- und Gitterkonstante:
+\begin{align}
+	D = (27,0 \pm 0,1)\;\si{\kilogram\per\square\second}\\
+	a_2 = (0,836 \pm 0,0055)\;\si{\meter}
+\end{align}
+Eine Federkonstante von $D = 27\;\si{\kilogram\per\square\second}$ ist also sehr plausibel, da die beiden Regressionswerte der ein- bzw. zweiatomigen Kette sich um weniger als 0,1\;\% unterscheiden.\\
+Ebenso beträgt die Abweichung der Gitterkonstanten $a_2$ vom theoretischen Wert nur ca. 0,1\;\%.\\
+Auch der Wert der Federkonstante, welcher aus der Schallgeschwindigkeit der einatomigen Kette berechnet wurde kommt ziemlich gut an diesen Wert heran. Allerdings wird der Wert aus den Regressionen genauer sein, da es sich bei der Schallgeschwindigkeit nur um eine Näherung für kleine $k$ handelt, die Regression aber alle Messwerte berücksichtigt.
 \section{Amplitudenverhältnisse}
 
-
-
+Das Amplitudenverhältnis der einzelnen Moden ist unabhängig von der Position in der Kette, es ist für alle Punkte in der Schwingung einer Mode gleich.
+Es kann mithilfe eines Korrekturfaktors pro Mode, der aus der Vorbereitungshilfe entnommen werden kann, berechnet werden:
+\begin{equation}
+	V = \frac{1}{\alpha_{korr}}\cdot\frac{s_m}{s_M}
+\end{equation}
+Trägt man diese Verhältnisse für alle 12 Moden über den Wellenvektor $k_n$ auf wird eine Abbildung wie Abb. 6.2 in der Vorbereitungshilfe erwartet.
+Die korrigierten Amplitudenverhältnisse sind in Tabelle \ref{tab:amplituden} aufgeführt.
+\xtable{htb}{amplituden}{Amplitudenverhältnisse der schweren und leichten Gleiter in der zweiatomigen Kette}{}
+In Abbildung \ref{fig:amplituden} sind die Amplitudenverhältnisse über die Wellenvektoren $k_n$ abgebildet.
 \begin{figure}[h]
 	\centering\includegraphics[width=0.8\textwidth]{fig/amplituden}
 	\caption{Amplitudenverhältnisse der beiden Zweige.}
 	\label{fig:amplituden}
 \end{figure}
+Die Abbildung entspricht bis auf einen Ausreisser im optischen Zweig den Erwartungen aus der Vorbereitungshilfe.\\
+Im akustischen Zweig geht das Verhältnis gegen 0, je höher die Mode ist, desto weniger bewegen sich die leichten Gleiter, bis sie schließlich stehen bleiben. Im akustischen Zweig dagegen geht das Amplitudenverhältnis gegen unendlich, dh die schweren Gleiter bleiben im Grenzfall stehen.
