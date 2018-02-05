@@ -31,6 +31,18 @@ Daraus folgt für die Relaxationslänge
 
 \section{Bestimmung der Diffusionslänge}
 
+Der Fluss der thermischen Neutronen ist proportional zur Differenz aus der Anzahl der Neutronen ohne Abschirmung $N_{1}$ und der Anzahl der Neutronen mit Abschirmung $N_{2}$. Die Unsicherheit ist jeweils durch $\Delta N=\sqrt{N}$ gegeben.
+Da die Unsicherheiten auf die beiden Messwerte korreliert sind, ergibt sich per Größtfehlerabschätzung
+\begin{equation}
+ \Delta N_{d} = \frac{\sqrt{N_{1}}+\sqrt{N_{2}}}{N_{1}-N_{2}},
+\end{equation}
+mit $N_{d}=N_{1}-N_{2}$.
+Insgesamt ergibt sich für die Unsicherheit auf die Größe $y=\ln(N_{d}r)$
+\begin{equation}
+ \Delta y = \sqrt{\left(\frac{\Delta N_{d}}{N_{d}}\right)^{2}+\left(\frac{\Delta r}{r}\right)^{2}}.
+\end{equation}
+
+
 \begin{figure}[tb]
   \centering
   \includegraphics[scale=0.5]{./fig/plot3.png}
