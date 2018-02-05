@@ -1,22 +1,3 @@
-Ganz tolle Auswertung des Versuchs. \cite{Dem10}
-
-und noch eine super Grafik
-
-%\begin{figure}[h]
-%	\centering\includegraphics[width=0.8\textwidth]{fig/figure_1}
-%	\caption{Extrem coole Grafik!}
-%\end{figure}
-%
-%\begin{figure}[h]
-%	\centering\includegraphics[width=0.8\textwidth]{fig/figure_2}
-%	\caption{Extrem coole Grafik!}
-%\end{figure}
-%
-%\begin{figure}[h]
-%	\centering\includegraphics[width=0.8\textwidth]{fig/figure_3}
-%	\caption{Extrem coole Grafik!}
-%\end{figure}
-%
 %\begin{figure}[h]
 %	\centering\includegraphics[width=0.8\textwidth]{fig/figure_4}
 %	\caption{Extrem coole Grafik!}
@@ -32,8 +13,59 @@ und noch eine super Grafik
 %	\label{fig:2_1_plot}
 %\end{figure}
 
-%\xtable{htb}{amplituden}{Amplitudenverhältnisse der schweren und leichten Gleiter in der zweiatomigen Kette}{(Aufg. 1)}
+%Photopeaks der Co-60 quelle waren fast direkt auf dem peak mit geringerer energie, zb bei 90 grad 1135 keV
+\section{Measurement}
 
-%Flo
+The emission of $\gamma$-quanta from Co-60 was measured in 3 measurement series with 3 different angles of the detectors relative to each other.\\
+Additionally we took a measurement of the background radiation and one measurement of Na-22 to associate channel numbers with the corresponding energy.
+This allows us to cut off any measured events that are irrelevant for the final result. As cutoff we use 60\% of the photopeak of Co-60 (E = 798 keV).\\
+The calculate the number of coincidences we first calculated the number of possible coincidental events which are characterized by their energy being above the cutoff point and  their events being within 200\;ns of each other.
+We then calculated the standard deviation of the time difference between possibly coincidental events and took only the number of events within that timeframe.\\
+The number of events above the cutoff energy for both detectors as well as the number of coincidental events are recorded in table \ref{tab:numbers}. They are already adjusted by removing the number of events calculated from the background data.
+\xtable{htb}{numbers}{measured $\gamma$-quanta with subtracted background}{}
+Curiously enough the background data revealed a nonzero coincidence count which shouldn't be possible. Thus the results of this experiment can't be trusted, there could be a fundamental problem with the evaluation of the data.
 
-%Anselm
+\subsection{Calculating the results}
+
+From these numbers we can calculate the correlation funktion $K(\Theta)$ using equation \ref{eq:K_theta}.
+\begin{align}
+	R(\Theta) &= \frac{N_c - N_c^b}{(N_1 - N_1^b)\cdot (N_2 - N_2^b)}\\
+	K(\Theta) &= \frac{R(\Theta)}{R(90\;\si{\degree})}
+	\label{eq:K_theta}
+\end{align}
+Each measurement series consisted of measuring the number of events at three different angles of the detectors relative to each other. With the correlation function at each of these angles we can solve the system of linear equations to determine the coefficents $a_2$ and $a_4$ and therefore the anisotropy
+\begin{equation}
+	A_n = a_2 + a_4
+	\label{eq:anisotropy}
+\end{equation}
+Formula \ref{eq:anisotropy} follows from the solution to the linear equation system:
+\begin{align}
+	a_2 &= 4K(135\;\si{\degree}) - K(135\;\si{\degree}) - 3\\
+	a_4 &= 2 + 2K(180\;\si{\degree}) - 4K(135\;\si{\degree})
+\end{align}
+The calculated values of each of these equations is recorded in table \ref{tab:coefficients}
+\xtable{htb}{coefficients}{results}{}
+
+\subsection{Uncertainty calculation}
+
+The error to the measurements is assumed to be purely statistical. Thus the unertainty is the same for every measured number of events:
+\begin{equation}
+	\Delta N = \sqrt{N}
+\end{equation}
+From this we can calculate the uncertainty on the correlation function. As the name implies the measurements are correlated thus the propagation of uncertainty needs to factor in the covariance matrix:
+\begin{align}
+	\Delta R(\Theta) &= \sqrt{\sum_{i=1}^{\textrm{c}}\left(\frac{\partial R(\Theta)}{\partial N_i}\cdot\Delta N_i\right)^2 + 2\sum_{i=1}^{2}\sum_{k=2}^{\textrm{c}}\left(\frac{\partial R(\Theta)}{\partial N_i}\right)\left(\frac{\partial R(\Theta)}{\partial N_k}\right)\cdot u(N_i, N_k)}\\
+	\Delta K(\Theta) &= K(\Theta)\cdot\sqrt{\left(\frac{\Delta R(\Theta)}{R(\Theta)}\right)^2 + \left(\frac{\Delta R(90\;\si{\degree})}{R(90\;\si{\degree})}\right)^2}
+\end{align}
+$u(N_i, N_k)$ is the covariance between $N_i$ and $N_k$.
+Since the covariance term of the uncertainty propagation was negative and bigger than the "normal" term, and thus the uncertainty would be imaginary, we disregarded it.\\
+The uncertainty of the coefficients is calculated similarly using propagation of uncertainty:
+\begin{align}
+	\Delta a_{2/4} &= \sqrt{\left(\frac{\partial a_{2/4}}{\partial K(135\;\si{\degree})}\cdot\Delta K(135\;\si{\degree})\right)^2 + \left(\frac{\partial a_{2/4}}{\partial K(180\;\si{\degree})}\cdot\Delta K(180\;\si{\degree})\right)^2}\\
+	\Delta A_n &= \Delta K(180\;\si{\degree})
+\end{align}
+All errors calculated by propagation of uncertainty are recorded in table \ref{tab:errors}.
+\xtable{htb}{errors}{errors}{}
+The divergence from the theoretical values is rather large for all results, except for the anisotropy where it's just around 15\;\%.
+The theoretical value for $a_2$ isn't even in the error margin. This hints at errors in the data analysis.\\
+Furthermore one can see that a better measurement tool should be used, because more measurements decrease the uncertainty but move the value for $a_4$ out of the error margin.
